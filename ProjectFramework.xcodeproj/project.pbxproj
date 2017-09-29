@@ -9,6 +9,23 @@
 /* Begin PBXBuildFile section */
 		079C974A1D17AD2B00DD539F /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 079C97491D17AD2B00DD539F /* libz.1.2.5.tbd */; };
 		079C974E1D17AD8B00DD539F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079C974D1D17AD8B00DD539F /* CoreGraphics.framework */; };
+		1C2DC09A1F7E9C7700A64006 /* HighlightsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DC0991F7E9C7700A64006 /* HighlightsModel.swift */; };
+		1C2DC09C1F7E9CA800A64006 /* HighlightsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DC09B1F7E9CA800A64006 /* HighlightsViewModel.swift */; };
+		1C2DC09E1F7EAA0200A64006 /* HighlightsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DC09D1F7EAA0200A64006 /* HighlightsCell.swift */; };
+		1C2DC0A01F7EBC7B00A64006 /* InternationalFootballViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DC09F1F7EBC7B00A64006 /* InternationalFootballViewModel.swift */; };
+		1C2DC0A21F7EC13A00A64006 /* ChinaFootballViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DC0A11F7EC13A00A64006 /* ChinaFootballViewModel.swift */; };
+		1C2DC0A41F7EC2A500A64006 /* SportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DC0A31F7EC2A500A64006 /* SportsViewModel.swift */; };
+		1C2DC0A61F7EC3D000A64006 /* ChinaBasketballViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DC0A51F7EC3D000A64006 /* ChinaBasketballViewModel.swift */; };
+		1C2DC0A81F7EC50000A64006 /* NBALeagueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DC0A71F7EC50000A64006 /* NBALeagueViewModel.swift */; };
+		1C2DC0AA1F7EC5CF00A64006 /* YingChaoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DC0A91F7EC5CF00A64006 /* YingChaoViewModel.swift */; };
+		1C2DC0AC1F7EC71300A64006 /* XiJiaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DC0AB1F7EC71300A64006 /* XiJiaViewModel.swift */; };
+		1C2DC0AE1F7EC87100A64006 /* ZhongChaoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DC0AD1F7EC87100A64006 /* ZhongChaoViewModel.swift */; };
+		1C2DC0B01F7EC9B900A64006 /* DeJiaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DC0AF1F7EC9B900A64006 /* DeJiaViewModel.swift */; };
+		1C2DC0B21F7ECAD700A64006 /* FaJiaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DC0B11F7ECAD700A64006 /* FaJiaViewModel.swift */; };
+		1C2DC0B41F7ECBA500A64006 /* YiJiaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DC0B31F7ECBA500A64006 /* YiJiaViewModel.swift */; };
+		1C2DC0B61F7ECC8200A64006 /* OUGuanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DC0B51F7ECC8200A64006 /* OUGuanViewModel.swift */; };
+		1C2DC0B81F7ECCFE00A64006 /* QuanYunHuiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DC0B71F7ECCFE00A64006 /* QuanYunHuiViewModel.swift */; };
+		1C2DC0BB1F7ECE3700A64006 /* PulickVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DC0BA1F7ECE3700A64006 /* PulickVideo.swift */; };
 		1CFECFBC1F7D575A008E5864 /* ChinaBasketball.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CFECFAA1F7D575A008E5864 /* ChinaBasketball.storyboard */; };
 		1CFECFBD1F7D575A008E5864 /* ChinaFootball.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CFECFAB1F7D575A008E5864 /* ChinaFootball.storyboard */; };
 		1CFECFBE1F7D575A008E5864 /* DeJia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CFECFAC1F7D575A008E5864 /* DeJia.storyboard */; };
@@ -249,6 +266,23 @@
 		079C974B1D17AD6600DD539F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		079C974D1D17AD8B00DD539F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		079C974F1D17ADA300DD539F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1C2DC0991F7E9C7700A64006 /* HighlightsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsModel.swift; sourceTree = "<group>"; };
+		1C2DC09B1F7E9CA800A64006 /* HighlightsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsViewModel.swift; sourceTree = "<group>"; };
+		1C2DC09D1F7EAA0200A64006 /* HighlightsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsCell.swift; sourceTree = "<group>"; };
+		1C2DC09F1F7EBC7B00A64006 /* InternationalFootballViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternationalFootballViewModel.swift; sourceTree = "<group>"; };
+		1C2DC0A11F7EC13A00A64006 /* ChinaFootballViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChinaFootballViewModel.swift; sourceTree = "<group>"; };
+		1C2DC0A31F7EC2A500A64006 /* SportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsViewModel.swift; sourceTree = "<group>"; };
+		1C2DC0A51F7EC3D000A64006 /* ChinaBasketballViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChinaBasketballViewModel.swift; sourceTree = "<group>"; };
+		1C2DC0A71F7EC50000A64006 /* NBALeagueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBALeagueViewModel.swift; sourceTree = "<group>"; };
+		1C2DC0A91F7EC5CF00A64006 /* YingChaoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YingChaoViewModel.swift; sourceTree = "<group>"; };
+		1C2DC0AB1F7EC71300A64006 /* XiJiaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XiJiaViewModel.swift; sourceTree = "<group>"; };
+		1C2DC0AD1F7EC87100A64006 /* ZhongChaoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhongChaoViewModel.swift; sourceTree = "<group>"; };
+		1C2DC0AF1F7EC9B900A64006 /* DeJiaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeJiaViewModel.swift; sourceTree = "<group>"; };
+		1C2DC0B11F7ECAD700A64006 /* FaJiaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaJiaViewModel.swift; sourceTree = "<group>"; };
+		1C2DC0B31F7ECBA500A64006 /* YiJiaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YiJiaViewModel.swift; sourceTree = "<group>"; };
+		1C2DC0B51F7ECC8200A64006 /* OUGuanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OUGuanViewModel.swift; sourceTree = "<group>"; };
+		1C2DC0B71F7ECCFE00A64006 /* QuanYunHuiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuanYunHuiViewModel.swift; sourceTree = "<group>"; };
+		1C2DC0BA1F7ECE3700A64006 /* PulickVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulickVideo.swift; sourceTree = "<group>"; };
 		1CFECFAA1F7D575A008E5864 /* ChinaBasketball.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChinaBasketball.storyboard; sourceTree = "<group>"; };
 		1CFECFAB1F7D575A008E5864 /* ChinaFootball.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChinaFootball.storyboard; sourceTree = "<group>"; };
 		1CFECFAC1F7D575A008E5864 /* DeJia.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DeJia.storyboard; sourceTree = "<group>"; };
@@ -599,6 +633,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C2DC0B91F7ECE0E00A64006 /* GlobalVideo */ = {
+			isa = PBXGroup;
+			children = (
+				1C2DC0BA1F7ECE3700A64006 /* PulickVideo.swift */,
+			);
+			path = GlobalVideo;
+			sourceTree = "<group>";
+		};
 		27609BC31CB257810041E8B7 = {
 			isa = PBXGroup;
 			children = (
@@ -844,6 +886,7 @@
 		2E273D071DAB151A00457F75 /* ProjectMainUI */ = {
 			isa = PBXGroup;
 			children = (
+				1C2DC0B91F7ECE0E00A64006 /* GlobalVideo */,
 				5F6A7E4C1F79FE4A008C26C9 /* Login */,
 				5FF1FF901F7CA52E00716BBD /* Home */,
 				5FF1FF8F1F7CA52700716BBD /* Game */,
@@ -858,11 +901,11 @@
 				1CFECFD31F7D5799008E5864 /* HomeMain.swift */,
 				1CFECFD41F7D5799008E5864 /* HotSpot.swift */,
 				1CFECFD21F7D5799008E5864 /* Highlights.swift */,
-				1CFECFCE1F7D5799008E5864 /* ChinaBasketball.swift */,
+				1CFECFD51F7D5799008E5864 /* InternationalFootball.swift */,
 				1CFECFCF1F7D5799008E5864 /* ChinaFootball.swift */,
+				1CFECFCE1F7D5799008E5864 /* ChinaBasketball.swift */,
 				1CFECFD01F7D5799008E5864 /* DeJia.swift */,
 				1CFECFD11F7D5799008E5864 /* FaJia.swift */,
-				1CFECFD51F7D5799008E5864 /* InternationalFootball.swift */,
 				1CFECFD61F7D5799008E5864 /* NBALeague.swift */,
 				1CFECFD71F7D5799008E5864 /* OUGuan.swift */,
 				1CFECFD81F7D5799008E5864 /* QuanYunHui.swift */,
@@ -885,6 +928,7 @@
 				1CFECFAC1F7D575A008E5864 /* DeJia.storyboard */,
 				1CFECFAD1F7D575A008E5864 /* FaJia.storyboard */,
 				1CFECFAE1F7D575A008E5864 /* Highlights.storyboard */,
+				1C2DC09D1F7EAA0200A64006 /* HighlightsCell.swift */,
 				1CFECFAF1F7D575A008E5864 /* HotSpot.storyboard */,
 				1CFECFB01F7D575A008E5864 /* InternationalFootball.storyboard */,
 				1CFECFB11F7D575A008E5864 /* NBALeague.storyboard */,
@@ -963,6 +1007,20 @@
 			isa = PBXGroup;
 			children = (
 				5FBDA6311F7DE79800B58F69 /* HotSpotViewModel.swift */,
+				1C2DC09B1F7E9CA800A64006 /* HighlightsViewModel.swift */,
+				1C2DC09F1F7EBC7B00A64006 /* InternationalFootballViewModel.swift */,
+				1C2DC0A11F7EC13A00A64006 /* ChinaFootballViewModel.swift */,
+				1C2DC0A31F7EC2A500A64006 /* SportsViewModel.swift */,
+				1C2DC0A51F7EC3D000A64006 /* ChinaBasketballViewModel.swift */,
+				1C2DC0A71F7EC50000A64006 /* NBALeagueViewModel.swift */,
+				1C2DC0A91F7EC5CF00A64006 /* YingChaoViewModel.swift */,
+				1C2DC0AB1F7EC71300A64006 /* XiJiaViewModel.swift */,
+				1C2DC0AD1F7EC87100A64006 /* ZhongChaoViewModel.swift */,
+				1C2DC0AF1F7EC9B900A64006 /* DeJiaViewModel.swift */,
+				1C2DC0B11F7ECAD700A64006 /* FaJiaViewModel.swift */,
+				1C2DC0B31F7ECBA500A64006 /* YiJiaViewModel.swift */,
+				1C2DC0B51F7ECC8200A64006 /* OUGuanViewModel.swift */,
+				1C2DC0B71F7ECCFE00A64006 /* QuanYunHuiViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -971,6 +1029,7 @@
 			isa = PBXGroup;
 			children = (
 				5FBDA62F1F7DE2DC00B58F69 /* HotSpotModel.swift */,
+				1C2DC0991F7E9C7700A64006 /* HighlightsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1646,6 +1705,7 @@
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftTheme/SwiftTheme.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/VGPlayer/VGPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 				"${BUILT_PRODUCTS_DIR}/swiftScan/swiftScan.framework",
 			);
@@ -1667,6 +1727,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftTheme.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VGPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/swiftScan.framework",
 			);
@@ -1690,11 +1751,13 @@
 				2E12CB101E6F1E6F009527BA /* TZAssetCell.m in Sources */,
 				2E12CB141E6F1E6F009527BA /* TZImagePickerController.m in Sources */,
 				5F29FEA71F7A5E9B004B41FE /* LoginViewModel.swift in Sources */,
+				1C2DC0AC1F7EC71300A64006 /* XiJiaViewModel.swift in Sources */,
 				6F4904C81F186DBA00F74691 /* UIViewController+Extension.swift in Sources */,
 				2E12CB111E6F1E6F009527BA /* TZAssetModel.m in Sources */,
 				5F1CC6A61F7CD538003A156E /* PlayGame.swift in Sources */,
 				6FF51D2C1EBD7E9E00021790 /* MCWebViewController.swift in Sources */,
 				6F4904BF1F186DBA00F74691 /* UIColor+Extension.swift in Sources */,
+				1C2DC0B01F7EC9B900A64006 /* DeJiaViewModel.swift in Sources */,
 				6FF51D2A1EBD7E9E00021790 /* CustomTextView.swift in Sources */,
 				5F94F13E1F7A436600A8A2DA /* LoginModel.swift in Sources */,
 				6F4904B71F186DBA00F74691 /* Date+Extension.swift in Sources */,
@@ -1709,11 +1772,14 @@
 				6F91AD671EBC5BE200A9E617 /* HcdPopMenuItem.m in Sources */,
 				6F4904CB1F186E4800F74691 /* CustomTemplateViewController.swift in Sources */,
 				6FF51D411EBD7EC500021790 /* ZFChooseTimeCollectionViewCell.m in Sources */,
+				1C2DC09E1F7EAA0200A64006 /* HighlightsCell.swift in Sources */,
 				5FCB6B701F6FC98400F2857E /* TAPageControl.m in Sources */,
 				1CFECFED1F7D5799008E5864 /* YiJia.swift in Sources */,
 				6F4904D11F186E8800F74691 /* CreatedbBase.swift in Sources */,
+				1C2DC0B81F7ECCFE00A64006 /* QuanYunHuiViewModel.swift in Sources */,
 				6F45EB621EF8F90C00562709 /* JLAssetsLibrary.m in Sources */,
 				6F4905271F186F6000F74691 /* GlobalParameter.swift in Sources */,
+				1C2DC0B21F7ECAD700A64006 /* FaJiaViewModel.swift in Sources */,
 				6FF51D261EBD7E9E00021790 /* CalendarViewController.swift in Sources */,
 				2E12CB0F1E6F1E6F009527BA /* NSBundle+TZImagePicker.m in Sources */,
 				2E12CB031E6F1E6F009527BA /* MHSheetFoot.m in Sources */,
@@ -1724,6 +1790,7 @@
 				1CFECFE31F7D5799008E5864 /* Highlights.swift in Sources */,
 				2E12CB151E6F1E6F009527BA /* TZPhotoPickerController.m in Sources */,
 				6FF51D2E1EBD7E9E00021790 /* PictrueSelectedViewController.swift in Sources */,
+				1C2DC0A41F7EC2A500A64006 /* SportsViewModel.swift in Sources */,
 				27E1421F1F7E957900E27C6E /* MyInfoViewController.swift in Sources */,
 				1CFECFE41F7D5799008E5864 /* HomeMain.swift in Sources */,
 				5FCB6B2E1F6F9E6000F2857E /* README.md in Sources */,
@@ -1738,6 +1805,7 @@
 				6F45EB501EF8F90C00562709 /* JLALAssetGroupViewController.m in Sources */,
 				2E12CB051E6F1E6F009527BA /* MHSheetHead.m in Sources */,
 				6F4905241F186F2C00F74691 /* MultilevelCategoriesTableViewController.swift in Sources */,
+				1C2DC0B41F7ECBA500A64006 /* YiJiaViewModel.swift in Sources */,
 				6F45EB681EF8F90C00562709 /* JLPhoto.m in Sources */,
 				2E12CB121E6F1E6F009527BA /* TZImageManager.m in Sources */,
 				5FBDA6321F7DE79800B58F69 /* HotSpotViewModel.swift in Sources */,
@@ -1762,16 +1830,20 @@
 				5FCB6B731F6FC98400F2857E /* UIView+SDExtension.m in Sources */,
 				6FF51D431EBD7EC500021790 /* ZFChooseTimeViewController.m in Sources */,
 				27E142181F7E0AAD00E27C6E /* AboutViewController.swift in Sources */,
+				1C2DC0A61F7EC3D000A64006 /* ChinaBasketballViewModel.swift in Sources */,
 				6FF51D351EBD7E9E00021790 /* ScrollViewPageViewController.swift in Sources */,
 				6F4904B91F186DBA00F74691 /* Double+Extension.swift in Sources */,
 				5FCB6B711F6FC98400F2857E /* SDCollectionViewCell.m in Sources */,
+				1C2DC0A21F7EC13A00A64006 /* ChinaFootballViewModel.swift in Sources */,
 				6FF51D271EBD7E9E00021790 /* CAPSPageMenu.swift in Sources */,
 				6F4904C41F186DBA00F74691 /* UITableViewCell+Extension.swift in Sources */,
+				1C2DC09C1F7E9CA800A64006 /* HighlightsViewModel.swift in Sources */,
 				6FF51D291EBD7E9E00021790 /* CustomImageView.swift in Sources */,
 				5FCB6B6E1F6FC98400F2857E /* TAAnimatedDotView.m in Sources */,
 				6F4904C61F186DBA00F74691 /* UITextField+Extension.swift in Sources */,
 				6F4904C71F186DBA00F74691 /* UIToolbar+Extension.swift in Sources */,
 				5FBDA63B1F7E41FA00B58F69 /* PulickVideoCell.swift in Sources */,
+				1C2DC0A81F7EC50000A64006 /* NBALeagueViewModel.swift in Sources */,
 				6F4904D51F186E9800F74691 /* AppResultModel.swift in Sources */,
 				6F45EB561EF8F90C00562709 /* UIView+Animation.m in Sources */,
 				27BCF48C1F7D2A64000BCDAF /* PlayGameModel.swift in Sources */,
@@ -1779,6 +1851,7 @@
 				2E12CA201E6F1D88009527BA /* CommonFunction.swift in Sources */,
 				1CFECFC51F7D575A008E5864 /* PulickNewsCell.swift in Sources */,
 				6F4905231F186F2C00F74691 /* ModifyViewController.swift in Sources */,
+				1C2DC0AA1F7EC5CF00A64006 /* YingChaoViewModel.swift in Sources */,
 				2E12CAB91E6F1E67009527BA /* MBProgressHUD+NJ.m in Sources */,
 				5F94F1401F7A46D200A8A2DA /* RegisterModel.swift in Sources */,
 				27E1421A1F7E0ACE00E27C6E /* FeedbackViewController.swift in Sources */,
@@ -1795,6 +1868,8 @@
 				2E12CB181E6F1E6F009527BA /* TZVideoPlayerController.m in Sources */,
 				1CFECFE61F7D5799008E5864 /* InternationalFootball.swift in Sources */,
 				1CFECFE01F7D5799008E5864 /* ChinaFootball.swift in Sources */,
+				1C2DC0AE1F7EC87100A64006 /* ZhongChaoViewModel.swift in Sources */,
+				1C2DC0BB1F7ECE3700A64006 /* PulickVideo.swift in Sources */,
 				1CFECFE81F7D5799008E5864 /* OUGuan.swift in Sources */,
 				6F4904BB1F186DBA00F74691 /* String+Extension.swift in Sources */,
 				2E12CB0D1E6F1E6F009527BA /* UIColor+PYExtension.m in Sources */,
@@ -1809,6 +1884,7 @@
 				1CFECFE91F7D5799008E5864 /* QuanYunHui.swift in Sources */,
 				5F29FEA51F7A5E96004B41FE /* registerViewCell.swift in Sources */,
 				27E142161F7E07F400E27C6E /* MyHeadUIView.swift in Sources */,
+				1C2DC0B61F7ECC8200A64006 /* OUGuanViewModel.swift in Sources */,
 				2E12CABB1E6F1E67009527BA /* MBProgressHUD.m in Sources */,
 				6F45EB631EF8F90C00562709 /* JLAlbumCell.m in Sources */,
 				2E12CB001E6F1E6F009527BA /* MHActionSheet.m in Sources */,
@@ -1816,9 +1892,11 @@
 				6F45EB511EF8F90C00562709 /* JLBrowserViewController.m in Sources */,
 				2E12CB011E6F1E6F009527BA /* MHSheetCell.m in Sources */,
 				6FF51D2D1EBD7E9E00021790 /* MenuView.swift in Sources */,
+				1C2DC0A01F7EBC7B00A64006 /* InternationalFootballViewModel.swift in Sources */,
 				2E12CB0C1E6F1E6F009527BA /* PYSearchViewController.m in Sources */,
 				6F4904CD1F186E5A00F74691 /* AFNHelper.swift in Sources */,
 				5F29FEA81F7A5E9E004B41FE /* regiestViewModel.swift in Sources */,
+				1C2DC09A1F7E9C7700A64006 /* HighlightsModel.swift in Sources */,
 				5F29FEAA1F7A5EA4004B41FE /* ForgotPasswordController.swift in Sources */,
 				5F29FEA61F7A5E99004B41FE /* ForgotPasswordViewModel.swift in Sources */,
 				6FF51D2B1EBD7E9E00021790 /* ImagePreviewViewController.swift in Sources */,

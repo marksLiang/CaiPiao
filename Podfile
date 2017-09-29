@@ -17,9 +17,10 @@ target "ProjectFramework" do
     pod 'DZNEmptyDataSet'                       #UITableview UICollectionView 空值时视图
     pod 'swiftScan', :git => 'https://github.com/CNKCQ/swiftScan.git', :branch => 'Swift3.0'        #二维码扫描 (swift）
     pod 'SwiftTheme'                            #第三方主题库(Swift)
-    pod 'SnapKit'                           #第三方约束库(swift)
+    pod 'SnapKit'                          #第三方约束库(swift)
     pod 'RxSwift',    '~> 3.0'              #响应式编程库(swift)
     pod 'RxCocoa',    '~> 3.0'              #响应式编程库(swift)
     pod 'RxDataSources', '~> 1.0'           #响应式编程库 主要用于tableivew等控件封装(swift)
     pod 'pop', '~> 1.0'     #Facebook开源的动画框架-Pop。
+    pod 'VGPlayer', '~> 0.1.5' #视频三方
 end
