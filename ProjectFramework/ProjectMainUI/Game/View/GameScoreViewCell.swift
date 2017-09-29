@@ -45,10 +45,10 @@ class GameScoreViewCell: UITableViewCell {
         let gamehm  =  begintime.split(separator: " ")[1].split(separator: ":")
           let newdate=Date()
        
-        if Calendar.current.isDate(Date().UnixToDate(timeStamp: model.beginTime ), inSameDayAs: NSDate() as Date) {
-            if(newdate.currentHour>Int(gamehm[0].description)!){
-         
-                if(newdate.currentMinute>=Int(gamehm[0].description)!){
+        if Calendar.current.isDate(Date().UnixToDate(timeStamp: model.beginTime ), inSameDayAs: NSDate() as Date) { 
+            if(newdate.currentHour>=Int(gamehm[0].description)!){
+    
+                if(newdate.currentMinute>=Int(gamehm[1].description)!){
                     //已经开赛了
                     homeScore.textColor=UIColor.black
                     awayScore.textColor=UIColor.black
@@ -65,7 +65,7 @@ class GameScoreViewCell: UITableViewCell {
                     
                     homeScore.text = hh + ":" + mm + "开始"
                     awayScore.text="未开赛"
-                    if(newdate.currentMinute+5>=Int(gamehm[0].description)!){
+                    if(newdate.currentMinute+15>=Int(gamehm[1].description)!){
                         awayScore.text="即将开始"
                     }
                     homeScore.textColor=UIColor.gray

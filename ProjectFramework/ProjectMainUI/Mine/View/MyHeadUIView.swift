@@ -26,7 +26,7 @@ class MyHeadUIView: UIView {
     lazy var Nametext:UILabel = {
         
         let lab=UILabel(frame: CGRect(x: self.bounds.width/2-100/2, y: self.ImageBtn.frame.maxY+5, width: 100, height: 20))
-        lab.text="有钱就是任性"
+        lab.text="Hi取个名字吧"
         lab.contentMode = .center
         lab.textColor=UIColor.white
         lab.textAlignment = .center
@@ -38,7 +38,7 @@ class MyHeadUIView: UIView {
     lazy var loginbtn:UIButton = {
         
         let btn = UIButton(frame: CGRect(x: 20, y: self.Nametext.frame.maxY+10, width: self.bounds.width/2-30, height: 30))
-        btn.backgroundColor=UIColor(red: 255/255, green: 193/255, blue: 37/255, alpha: 1)
+        btn.backgroundColor=UIColor(red: 225/255, green: 153/255, blue: 137/255, alpha: 1)
         btn.setTitleColor(UIColor.white, for: .normal)
         btn.setTitle(  "登  录",   for: .normal)
         btn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
@@ -64,7 +64,7 @@ class MyHeadUIView: UIView {
     func Show(tableHeaderView:UITableView,target:UIViewController,ViewHeight:CGFloat,imgSelector:Selector,loginSelector:Selector,registerSelector:Selector) -> UIView{
         
         self.frame=CGRect(x: CGFloat(0), y: CGFloat(0), width: CGFloat(UIScreen.main.bounds.size.width), height: ViewHeight)
-        self.backgroundColor = CommonFunction.SystemColor()  //红色背景
+        self.backgroundColor = CommonFunction.SystemColor()
         tableHeaderView.tableHeaderView = self
         self.addSubview(ImageBtn)    //添加图片
         self.addSubview(Nametext)    //添加文字

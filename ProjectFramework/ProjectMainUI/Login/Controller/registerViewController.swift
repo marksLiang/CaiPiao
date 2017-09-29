@@ -125,7 +125,7 @@ class registerViewController: UIViewController,UITableViewDelegate,UITableViewDa
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return 4
+        return 3
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
@@ -142,8 +142,8 @@ class registerViewController: UIViewController,UITableViewDelegate,UITableViewDa
         switch indexPath.row
         {
         case 0:
-            cell.lab.text="手机号:"
-            cell.inpuText.placeholder="请输入手机号码"
+            cell.lab.text="账号:"
+            cell.inpuText.placeholder="请输入账号"
             cell.inpuText.keyboardType = .phonePad
             cell.inpuText.rx.text.orEmpty
                 .bind(to: _regiestViewModel.username) //手机号绑定

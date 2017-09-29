@@ -43,7 +43,7 @@ class LoginView: UIView
         let imgWh:CGFloat=70
         let newTextField = UITextField(frame: CGRect(x: 70, y: self.UserImage.frame.maxY+50, width: self.bounds.width-100, height: 27))
         newTextField.placeholder="请输入"
-        newTextField.font=UIFont.systemFont(ofSize: 12)
+        newTextField.font=UIFont.systemFont(ofSize: 13)
         newTextField.clearButtonMode = .always
         newTextField.textColor=UIColor.white
         newTextField.keyboardType = .numberPad
@@ -73,7 +73,7 @@ class LoginView: UIView
         let imgWh:CGFloat=70
         let newTextField = UITextField(frame: CGRect(x: 70, y: self.UsernameLine.frame.maxY+30, width: self.bounds.width-100, height: 27))
         newTextField.placeholder="请输入"
-        newTextField.font=UIFont.systemFont(ofSize: 12)
+        newTextField.font=UIFont.systemFont(ofSize: 13)
         newTextField.clearButtonMode = .always
         newTextField.textColor=UIColor.white
         newTextField.isSecureTextEntry=true
@@ -95,7 +95,7 @@ class LoginView: UIView
         let btn = UIButton(frame: CGRect(x: self.pawnameLine.frame.maxX-80, y: self.pawnameLine.frame.maxY+5, width:  80, height: 20))
         btn.setTitleColor(UIColor.white, for: .normal)
         btn.setTitle(  "忘记密码？",   for: .normal)
-        btn.titleLabel?.font = UIFont.systemFont(ofSize: 12)
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 13)
         return btn
     }()
     
@@ -108,7 +108,7 @@ class LoginView: UIView
         btn.backgroundColor=UIColor(red: 255/255, green: 193/255, blue: 37/255, alpha: 1)
         btn.setTitleColor(UIColor.white, for: .normal)
         btn.setTitle(  "登  录",   for: .normal)
-        btn.titleLabel?.font = UIFont.systemFont(ofSize: 12)
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 13)
         btn.layer.cornerRadius=4
         btn.layer.masksToBounds=true
         return btn
@@ -121,7 +121,7 @@ class LoginView: UIView
         btn.backgroundColor=UIColor(red: 92/255, green: 190/255, blue: 255/255, alpha: 1)
         btn.setTitleColor(UIColor.white, for: .normal)
         btn.setTitle(  "注  册",   for: .normal)
-        btn.titleLabel?.font = UIFont.systemFont(ofSize: 12)
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 13)
         btn.layer.cornerRadius=4
         btn.layer.masksToBounds=true
         return btn
@@ -153,7 +153,7 @@ class LoginView: UIView
         self.addSubview(pawNameText)
         self.addSubview(pawnameLine)
         
-        self.addSubview(Forgetpassword)
+//        self.addSubview(Forgetpassword) 忘记密码
         
         self.addSubview(loginbtn)
         self.addSubview(registerbtn)

@@ -28,8 +28,10 @@ class PlayGame: CustomTemplateViewController {
         self.InitCongif(tableView)
         self.numberOfSections=1
         self.tableViewheightForRowAt=95
+        self.navigationController?.navigationBar.barTintColor = UIColor.clear
         GetHtpsData()
     }
+ 
     
     //MARK: Refresh
     override func footerRefresh() {

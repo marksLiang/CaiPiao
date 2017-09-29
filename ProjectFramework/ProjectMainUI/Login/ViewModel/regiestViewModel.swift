@@ -48,21 +48,21 @@ class regiestViewModel {
                 //------------用户名处理
                 if(name==""){
                     //空值处理
-                    CommonFunction.HUD("手机号不可为空", type: .error)
+                    CommonFunction.HUD("账号不可为空", type: .error)
                     return Observable.just(ValidationResult.empty)
                 }
                 
-                if(name.characters.count != 11){
-                    //校验手机号码
-                    CommonFunction.HUD("请输入11位手机号", type: .error)
-                    return Observable.just(ValidationResult.error)
-                }
-                else{
-                    if(!Validate.phoneNum(name).isRight){
-                        CommonFunction.HUD("请输入正确的手机号", type: .error)
-                        return Observable.just(ValidationResult.error)
-                    }
-                }
+//                if(name.characters.count != 11){
+//                    //校验手机号码
+//                    CommonFunction.HUD("请输入11位手机号", type: .error)
+//                    return Observable.just(ValidationResult.error)
+//                }
+//                else{
+//                    if(!Validate.phoneNum(name).isRight){
+//                        CommonFunction.HUD("请输入正确的手机号", type: .error)
+//                        return Observable.just(ValidationResult.error)
+//                    }
+//                }
                 
                 
                 //----------------密码处理

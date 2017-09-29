@@ -274,7 +274,15 @@ final class   CommonFunction {
     static func LineColor()->UIColor{
         return  RGBA(239, g: 239, b: 244)
     }
+   //导航栏颜色
+    static func NavBarSystemColor()->UIColor{
+        return  UIColor().TransferStringToColor("#FFFFFF")
+    }
+    static func NavBarSystemColor()->String{
+        return   "#FFFFFF"
+    }
     /// 本系统默认颜色调
+    
     static func SystemColor()->UIColor{
         return  UIColor().TransferStringToColor("#FDC038")
     }

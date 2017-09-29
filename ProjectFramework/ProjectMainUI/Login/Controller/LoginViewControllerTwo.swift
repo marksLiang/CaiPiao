@@ -16,6 +16,7 @@ class LoginViewControllerTwo: UIViewController
     fileprivate let disposeBag   = DisposeBag() //创建一个处理包（通道）
     let _LoginViewModel = LoginViewModel()   //数据处理 (VM)
     
+    
     //类似于OC中的typedef
     typealias CallbackValue=(_ value:Bool)->Void
     
@@ -81,6 +82,7 @@ class LoginViewControllerTwo: UIViewController
         
         Result()
         
+      
     }
  
     override func didReceiveMemoryWarning()
@@ -120,6 +122,7 @@ class LoginViewControllerTwo: UIViewController
     
     deinit {
         debugPrint("页面销毁")
+        UIApplication.shared.setStatusBarStyle(.default, animated: true);
     }
     
 }

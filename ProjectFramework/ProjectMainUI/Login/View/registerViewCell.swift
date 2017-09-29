@@ -24,7 +24,7 @@ class registerViewCell: UITableViewCell {
     lazy var lab:UILabel = {
         let lab = UILabel(frame: CGRect(x: 10, y: 8, width: 70, height: 30))
         lab.text=""
-        lab.font=UIFont.systemFont(ofSize: 12)
+        lab.font=UIFont.systemFont(ofSize: 13)
         lab.textColor = UIColor.white
         return lab
     }()
@@ -39,7 +39,7 @@ class registerViewCell: UITableViewCell {
         newTextField = UITextField(frame: CGRect(x: 75, y:10, width: self.bounds.width-100, height: 27))
         }
         newTextField?.placeholder=""
-        newTextField?.font=UIFont.systemFont(ofSize: 12)
+        newTextField?.font=UIFont.systemFont(ofSize: 13)
         newTextField?.textColor=UIColor.white
         newTextField?.clearButtonMode = .always
         return newTextField!
@@ -57,7 +57,7 @@ class registerViewCell: UITableViewCell {
         let btn = UIButton(frame: CGRect(x: self.bounds.width-100, y: 12, width: 69, height: 20))
         btn.setTitleColor(UIColor.white, for: .normal)
         btn.setTitle(  "获取验证码",   for: .normal)
-        btn.titleLabel?.font = UIFont.systemFont(ofSize: 12)
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 13)
         btn.layer.cornerRadius=4
         btn.layer.masksToBounds=true
         btn.layer.borderWidth = 1

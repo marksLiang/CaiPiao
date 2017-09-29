@@ -48,13 +48,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let titleAttributes: [[String: AnyObject]] = ["#000000"].map { hexString in
             return [
                 NSForegroundColorAttributeName: UIColor(rgba: hexString),
-                NSFontAttributeName: UIFont.systemFont(ofSize: 16),
+                NSFontAttributeName: UIFont.systemFont(ofSize: 16), //导航中间字大小
                 NSShadowAttributeName: shadow
             ]
         }
         
-//        navigationBar.theme_tintColor = ThemeColorPicker.pickerWithColors(["#FFF"])
-//        navigationBar.theme_barTintColor = [CommonFunction.SystemColor()]
+        navigationBar.theme_tintColor = ThemeColorPicker.pickerWithColors(["#000000"])//导航栏（左、右按钮（返回)字体)颜色
+        navigationBar.theme_barTintColor = [CommonFunction.NavBarSystemColor()] //导航栏背景颜色
         navigationBar.theme_titleTextAttributes = ThemeDictionaryPicker.pickerWithDicts(titleAttributes)
         
         // tab bar

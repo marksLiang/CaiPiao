@@ -49,6 +49,7 @@
 		27609BE51CB257810041E8B7 /* ProjectFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27609BE41CB257810041E8B7 /* ProjectFrameworkTests.swift */; };
 		27609BF01CB257810041E8B7 /* ProjectFrameworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27609BEF1CB257810041E8B7 /* ProjectFrameworkUITests.swift */; };
 		27609BFE1CB257E40041E8B7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 27609BFD1CB257E40041E8B7 /* Podfile */; };
+		27A7C6861F7E99C600EA31D9 /* Myinfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27A7C6851F7E99C600EA31D9 /* Myinfo.storyboard */; };
 		27BCF4881F7D2699000BCDAF /* GameScoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BCF4871F7D2699000BCDAF /* GameScoreViewCell.swift */; };
 		27BCF48A1F7D26A9000BCDAF /* GameVodViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BCF4891F7D26A9000BCDAF /* GameVodViewCell.swift */; };
 		27BCF48C1F7D2A64000BCDAF /* PlayGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BCF48B1F7D2A64000BCDAF /* PlayGameModel.swift */; };
@@ -57,6 +58,8 @@
 		27E142161F7E07F400E27C6E /* MyHeadUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E142151F7E07F400E27C6E /* MyHeadUIView.swift */; };
 		27E142181F7E0AAD00E27C6E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E142171F7E0AAD00E27C6E /* AboutViewController.swift */; };
 		27E1421A1F7E0ACE00E27C6E /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E142191F7E0ACE00E27C6E /* FeedbackViewController.swift */; };
+		27E1421C1F7E93D200E27C6E /* MyMsgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E1421B1F7E93D200E27C6E /* MyMsgViewController.swift */; };
+		27E1421F1F7E957900E27C6E /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E1421E1F7E957900E27C6E /* MyInfoViewController.swift */; };
 		27E6B8801CF34E3A00DD6418 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E6B87F1CF34E3A00DD6418 /* QuartzCore.framework */; };
 		27E6B8881CF34F1700DD6418 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E6B8871CF34F1700DD6418 /* libicucore.tbd */; };
 		27E6B88A1CF34F2C00DD6418 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E6B8891CF34F2C00DD6418 /* libz.tbd */; };
@@ -293,6 +296,7 @@
 		27609BF11CB257810041E8B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27609BFD1CB257E40041E8B7 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		27609C571CB25B4B0041E8B7 /* Procject-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Procject-Header.h"; sourceTree = "<group>"; };
+		27A7C6851F7E99C600EA31D9 /* Myinfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Myinfo.storyboard; sourceTree = "<group>"; };
 		27BCF4871F7D2699000BCDAF /* GameScoreViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScoreViewCell.swift; sourceTree = "<group>"; };
 		27BCF4891F7D26A9000BCDAF /* GameVodViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVodViewCell.swift; sourceTree = "<group>"; };
 		27BCF48B1F7D2A64000BCDAF /* PlayGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGameModel.swift; sourceTree = "<group>"; };
@@ -301,6 +305,8 @@
 		27E142151F7E07F400E27C6E /* MyHeadUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHeadUIView.swift; sourceTree = "<group>"; };
 		27E142171F7E0AAD00E27C6E /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		27E142191F7E0ACE00E27C6E /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		27E1421B1F7E93D200E27C6E /* MyMsgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMsgViewController.swift; sourceTree = "<group>"; };
+		27E1421E1F7E957900E27C6E /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
 		27E6B87F1CF34E3A00DD6418 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		27E6B8811CF34E5A00DD6418 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		27E6B8831CF34E7C00DD6418 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -922,6 +928,8 @@
 				5F1CC6A71F7CD55D003A156E /* MineCenter.swift */,
 				27E142171F7E0AAD00E27C6E /* AboutViewController.swift */,
 				27E142191F7E0ACE00E27C6E /* FeedbackViewController.swift */,
+				27E1421B1F7E93D200E27C6E /* MyMsgViewController.swift */,
+				27E1421E1F7E957900E27C6E /* MyInfoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -932,6 +940,7 @@
 				5F1CC6AB1F7CD5F8003A156E /* MineCenter.storyboard */,
 				27E142131F7E07D500E27C6E /* MyCell.swift */,
 				27E142151F7E07F400E27C6E /* MyHeadUIView.swift */,
+				27A7C6851F7E99C600EA31D9 /* Myinfo.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1461,7 +1470,7 @@
 				TargetAttributes = {
 					27609BCB1CB257810041E8B7 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = HVZA4NK9EV;
+						DevelopmentTeam = F5BJ32YABV;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -1525,6 +1534,7 @@
 				6F45EB5E1EF8F90C00562709 /* navigationbar_back_dark@3x.png in Resources */,
 				6FF51D421EBD7EC500021790 /* ZFChooseTimeCollectionViewCell.xib in Resources */,
 				2E12CB081E6F1E6F009527BA /* MHSheetView.xib in Resources */,
+				27A7C6861F7E99C600EA31D9 /* Myinfo.storyboard in Resources */,
 				6F49049F1F186DA200F74691 /* GlobalClassSettings.bundle in Resources */,
 				6F45EB651EF8F90C00562709 /* JLBadgeView.xib in Resources */,
 				5F1CC6B71F7CF10E003A156E /* Launch Screen.storyboard in Resources */,
@@ -1714,10 +1724,12 @@
 				1CFECFE31F7D5799008E5864 /* Highlights.swift in Sources */,
 				2E12CB151E6F1E6F009527BA /* TZPhotoPickerController.m in Sources */,
 				6FF51D2E1EBD7E9E00021790 /* PictrueSelectedViewController.swift in Sources */,
+				27E1421F1F7E957900E27C6E /* MyInfoViewController.swift in Sources */,
 				1CFECFE41F7D5799008E5864 /* HomeMain.swift in Sources */,
 				5FCB6B2E1F6F9E6000F2857E /* README.md in Sources */,
 				6F4904C51F186DBA00F74691 /* UITapGestureRecognizer+Extension.swift in Sources */,
 				6F4904C01F186DBA00F74691 /* UIImage+Extension.swift in Sources */,
+				27E1421C1F7E93D200E27C6E /* MyMsgViewController.swift in Sources */,
 				1CFECFE51F7D5799008E5864 /* HotSpot.swift in Sources */,
 				5F29FEAC1F7A5EA9004B41FE /* registerViewController.swift in Sources */,
 				5FBDA6301F7DE2DC00B58F69 /* HotSpotModel.swift in Sources */,
@@ -1943,7 +1955,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = HVZA4NK9EV;
+				DEVELOPMENT_TEAM = F5BJ32YABV;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1989,7 +2001,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = HVZA4NK9EV;
+				DEVELOPMENT_TEAM = F5BJ32YABV;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

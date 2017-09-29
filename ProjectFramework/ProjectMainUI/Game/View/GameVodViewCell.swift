@@ -39,7 +39,7 @@ class GameVodViewCell: UITableViewCell {
         let newdate=Date()
         if Calendar.current.isDate(Date().UnixToDate(timeStamp: model.beginTime ), inSameDayAs: NSDate() as Date) {
             if(newdate.currentHour>=Int(gamehm[0].description)!){
-                if(newdate.currentMinute>=Int(gamehm[0].description)!){
+                if(newdate.currentMinute>=Int(gamehm[1].description)!){
                     //已经开赛了
                     lab2.text=""
                 }else{
@@ -50,7 +50,7 @@ class GameVodViewCell: UITableViewCell {
                     let mm = m == 1 ? "0" + gamehm[1].description : gamehm[1].description
                     lab1.text = hh + ":" + mm + "开始"
                     lab2.text="未开赛"
-                    if(newdate.currentMinute+5>=Int(gamehm[0].description)!){
+                    if(newdate.currentMinute+15>=Int(gamehm[1].description)!){
                            lab2.text="即将开始"
                     }
                     lab1.textColor=UIColor.gray

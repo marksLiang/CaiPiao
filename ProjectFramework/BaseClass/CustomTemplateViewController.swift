@@ -98,7 +98,7 @@ class CustomTemplateViewController: UIViewController ,UITableViewDelegate,UITabl
         self.navigationController?.navigationBar.isTranslucent=true
         self.view.backgroundColor = UIColor.white
         self.navigationController?.navigationBar.shadowImage=UIImage()
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage().ImageWithColor(color: CommonFunction.SystemColor(), size: CGSize.init(width: CommonFunction.kScreenWidth, height: CommonFunction.NavigationControllerHeight)),for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage().ImageWithColor(color: CommonFunction.NavBarSystemColor(), size: CGSize.init(width: CommonFunction.kScreenWidth, height: CommonFunction.NavigationControllerHeight)),for: UIBarMetrics.default)
         
     }
     

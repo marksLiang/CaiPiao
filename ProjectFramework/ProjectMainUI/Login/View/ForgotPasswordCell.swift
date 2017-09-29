@@ -23,7 +23,7 @@ class ForgotPasswordCell: UITableViewCell {
     lazy var lab:UILabel = {
         let lab = UILabel(frame: CGRect(x: 10, y: 10, width: 50, height: 30))
         lab.text=""
-        lab.font=UIFont.systemFont(ofSize: 12)
+        lab.font=UIFont.systemFont(ofSize: 13)
         return lab
     }()
     //输入框
@@ -37,7 +37,7 @@ class ForgotPasswordCell: UITableViewCell {
             newTextField = UITextField(frame: CGRect(x: 65, y:10, width: self.bounds.width-70, height: 27))
         }
         newTextField?.placeholder=""
-        newTextField?.font=UIFont.systemFont(ofSize: 12)
+        newTextField?.font=UIFont.systemFont(ofSize: 13)
         newTextField?.clearButtonMode = .always
         return newTextField!
     }()
@@ -54,7 +54,7 @@ class ForgotPasswordCell: UITableViewCell {
         let btn = UIButton(frame: CGRect(x: self.Hline.frame.maxX+1, y: 10, width: 69, height: 27))
         btn.setTitleColor(UIColor.red, for: .normal)
         btn.setTitle(  "获取验证码",   for: .normal)
-        btn.titleLabel?.font = UIFont.systemFont(ofSize: 12)
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 13)
         btn.layer.cornerRadius=4
         btn.layer.masksToBounds=true
         return btn
