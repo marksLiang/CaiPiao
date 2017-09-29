@@ -19,6 +19,7 @@ class GameScoreViewCell: UITableViewCell {
     
     @IBOutlet weak var homeScore: UILabel!
     @IBOutlet weak var awayScore: UILabel!
+    @IBOutlet weak var GameTime: UILabel!
     
     
     
@@ -36,42 +37,71 @@ class GameScoreViewCell: UITableViewCell {
         awayTeamName.text=model.awayTeamName
         homeScore.text=model.homeScore
         awayScore.text=model.awayScore
-        leagueType.text=model.leagueType
-        let begintime =  Date().UnixToDate(timeStamp: model.beginTime )
-        let hm =  begintime.currentHour + begintime.currentMinute
-        let newdate=Date()
-        let newhm=newdate.currentHour + newdate.currentMinute
-        
-        if Calendar.current.isDate(Date().UnixToDate(timeStamp: model.beginTime ), inSameDayAs: NSDate() as Date) { 
-            if(newhm>hm){
-                //已经开赛了
-                homeScore.textColor=UIColor.black
-                awayScore.textColor=UIColor.black
+        leagueType.text=model.leagueName
+        let time = Date().UnixToString(timeStamp: model.beginTime )
+        GameTime.text=time.split(separator: " ")[0].description
+
+        let begintime =  Date().UnixToString(timeStamp: model.beginTime )
+        let gamehm  =  begintime.split(separator: " ")[1].split(separator: ":")
+          let newdate=Date()
+       
+        if Calendar.current.isDate(Date().UnixToDate(timeStamp: model.beginTime ), inSameDayAs: NSDate() as Date) {
+            if(newdate.currentHour>Int(gamehm[0].description)!){
+         
+                if(newdate.currentMinute>=Int(gamehm[0].description)!){
+                    //已经开赛了
+                    homeScore.textColor=UIColor.black
+                    awayScore.textColor=UIColor.black
+                    
+                    homeScore.font=UIFont.boldSystemFont(ofSize: 15)
+                    awayScore.font=UIFont.boldSystemFont(ofSize: 15)
+                }else{
                 
-                homeScore.font=UIFont.boldSystemFont(ofSize: 15)
-                awayScore.font=UIFont.boldSystemFont(ofSize: 15)
-            }else{
+                    //未开赛
+                    let h =   Int(gamehm[0].description)!
+                    let m =   Int(gamehm[1].description)!
+                    let hh = h == 1 ? "0" +  gamehm[0].description  :  gamehm[0].description
+                    let mm = m == 1 ? "0" + gamehm[1].description : gamehm[1].description
+                    
+                    homeScore.text = hh + ":" + mm + "开始"
+                    awayScore.text="未开赛"
+                    if(newdate.currentMinute+5>=Int(gamehm[0].description)!){
+                        awayScore.text="即将开始"
+                    }
+                    homeScore.textColor=UIColor.gray
+                    awayScore.textColor=UIColor.gray
+                    homeScore.font=UIFont.systemFont(ofSize: 13)
+                    awayScore.font=UIFont.systemFont(ofSize: 13)
+                }
+                
+      
+            } 
+            else{
                 //未开赛
-                let h =  begintime.currentHour.description.characters.count
-                let m =  begintime.currentMinute.description.characters.count
-                let hh = h == 1 ? "0" + begintime.currentHour.description : begintime.currentHour.description
-                let mm = m == 1 ? "0" + begintime.currentMinute.description : begintime.currentMinute.description
+                let h =   Int(gamehm[0].description)!
+                let m =   Int(gamehm[1].description)!
+                let hh = h == 1 ? "0" +  gamehm[0].description  :  gamehm[0].description
+                let mm = m == 1 ? "0" + gamehm[1].description : gamehm[1].description
                 
                 homeScore.text = hh + ":" + mm + "开始"
                 awayScore.text="未开赛"
                 homeScore.textColor=UIColor.gray
                 awayScore.textColor=UIColor.gray
+                homeScore.font=UIFont.systemFont(ofSize: 13)
+                awayScore.font=UIFont.systemFont(ofSize: 13)
             }
         }else {
-          let h =  begintime.currentHour.description.characters.count
-            let m =  begintime.currentMinute.description.characters.count
-             let hh = h == 1 ? "0" + begintime.currentHour.description : begintime.currentHour.description
-             let mm = m == 1 ? "0" + begintime.currentMinute.description : begintime.currentMinute.description
+            let h =   Int(gamehm[0].description)!
+            let m =   Int(gamehm[1].description)!
+            let hh = h == 1 ? "0" +  gamehm[0].description  :  gamehm[0].description
+            let mm = m == 1 ? "0" + gamehm[1].description : gamehm[1].description
             
             homeScore.text = hh + ":" + mm + "开始"
             awayScore.text="未开赛"
             homeScore.textColor=UIColor.gray
             awayScore.textColor=UIColor.gray
+            homeScore.font=UIFont.systemFont(ofSize: 13)
+            awayScore.font=UIFont.systemFont(ofSize: 13)
             
         }
         

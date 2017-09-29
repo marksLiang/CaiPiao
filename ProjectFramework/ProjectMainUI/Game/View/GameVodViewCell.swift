@@ -16,6 +16,7 @@ class GameVodViewCell: UITableViewCell {
     @IBOutlet weak var lab1: UILabel!
     
     @IBOutlet weak var lab2: UILabel!
+    @IBOutlet weak var gameTime: UILabel!
     override func awakeFromNib() {
         
         super.awakeFromNib()
@@ -24,36 +25,54 @@ class GameVodViewCell: UITableViewCell {
 
     override func InitConfig(_ cell: Any) {
      let model = cell as! PlayGameData
-        leagueType.text=model.leagueType
+        leagueType.text=model.leagueName
         img.ImageLoad(PostUrl: model.homeTeamLogo)
         lab1.text=model.homeTeamName
         lab2.text = Date().UnixToString(timeStamp: model.beginTime )
         
-        let begintime =  Date().UnixToDate(timeStamp: model.beginTime )
-        let hm =  begintime.currentHour + begintime.currentMinute
-        let newdate=Date()
-        let newhm=newdate.currentHour + newdate.currentMinute
+        let time = Date().UnixToString(timeStamp: model.beginTime )
+        gameTime.text=time.split(separator: " ")[0].description
         
-        if Calendar.current.isDate(Date().UnixToDate(timeStamp: model.beginTime ), inSameDayAs: NSDate() as Date) { 
-            if(newhm>hm){
-                //已经开赛了
-                lab2.text=""
-            }else{
+        let begintime =  Date().UnixToString(timeStamp: model.beginTime )
+        let gamehm  =  begintime.split(separator: " ")[1].split(separator: ":")
+       
+        let newdate=Date()
+        if Calendar.current.isDate(Date().UnixToDate(timeStamp: model.beginTime ), inSameDayAs: NSDate() as Date) {
+            if(newdate.currentHour>=Int(gamehm[0].description)!){
+                if(newdate.currentMinute>=Int(gamehm[0].description)!){
+                    //已经开赛了
+                    lab2.text=""
+                }else{
+                    //未开赛
+                    let h =   Int(gamehm[0].description)!
+                    let m =   Int(gamehm[1].description)!
+                    let hh = h == 1 ? "0" +  gamehm[0].description  :  gamehm[0].description
+                    let mm = m == 1 ? "0" + gamehm[1].description : gamehm[1].description
+                    lab1.text = hh + ":" + mm + "开始"
+                    lab2.text="未开赛"
+                    if(newdate.currentMinute+5>=Int(gamehm[0].description)!){
+                           lab2.text="即将开始"
+                    }
+                    lab1.textColor=UIColor.gray
+                    lab2.textColor=UIColor.gray
+                }
+            }
+           else{
                 //未开赛
-                let h =  begintime.currentHour.description.characters.count
-                let m =  begintime.currentMinute.description.characters.count
-                let hh = h == 1 ? "0" + begintime.currentHour.description : begintime.currentHour.description
-                let mm = m == 1 ? "0" + begintime.currentMinute.description : begintime.currentMinute.description
+                let h =   Int(gamehm[0].description)!
+                let m =   Int(gamehm[1].description)!
+                let hh = h == 1 ? "0" +  gamehm[0].description  :  gamehm[0].description
+                let mm = m == 1 ? "0" + gamehm[1].description : gamehm[1].description
                 lab1.text = hh + ":" + mm + "开始"
                 lab2.text="未开赛"
                 lab1.textColor=UIColor.gray
                 lab2.textColor=UIColor.gray
             }
         }else { 
-            let h =  begintime.currentHour.description.characters.count
-            let m =  begintime.currentMinute.description.characters.count
-            let hh = h == 1 ? "0" + begintime.currentHour.description : begintime.currentHour.description
-            let mm = m == 1 ? "0" + begintime.currentMinute.description : begintime.currentMinute.description
+                let h =   Int(gamehm[0].description)!
+                let m =   Int(gamehm[1].description)!
+                let hh = h == 1 ? "0" +  gamehm[0].description  :  gamehm[0].description
+                let mm = m == 1 ? "0" + gamehm[1].description : gamehm[1].description
             lab1.text = hh + ":" + mm + "开始"
             lab2.text="未开赛"
             lab1.textColor=UIColor.gray

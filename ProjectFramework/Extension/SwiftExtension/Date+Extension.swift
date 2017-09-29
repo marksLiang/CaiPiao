@@ -131,6 +131,7 @@ extension Date {
         
         //格式话输出
         let dformatter = DateFormatter()
+        dformatter.locale = Locale.init(identifier: "zh_CN")
         dformatter.dateFormat = dateFormat
         return dformatter.string(from: date as Date)
     }
@@ -143,6 +144,7 @@ extension Date {
         
         //格式话输出
         let dformatter = DateFormatter()
+        dformatter.locale = Locale.init(identifier: "zh_CN")
         dformatter.dateFormat = dateFormat
         return   date as Date
     }
@@ -155,6 +157,7 @@ extension Date {
         
         // 创建一个日期格式器
         let dformatter = DateFormatter()
+        dformatter.locale = Locale.init(identifier: "zh_CN")  
         dformatter.dateFormat = dateFormat
         //当前时间的时间戳
         let timeInterval:TimeInterval = now.timeIntervalSince1970

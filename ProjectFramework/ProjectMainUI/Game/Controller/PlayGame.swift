@@ -87,15 +87,32 @@ class PlayGame: CustomTemplateViewController {
         
         var cell:UITableViewCell!
         
+   
         if(viewModel.ListData[indexPath.row].awayTeamLogo != "" && viewModel.ListData[indexPath.row].homeTeamLogo != "" ){
-                    cell   = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! GameScoreViewCell
+          cell   = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! GameScoreViewCell
         } else{
                cell = tableView.dequeueReusableCell(withIdentifier: identifier1, for: indexPath) as!
             GameVodViewCell
-        } 
+        }
+        if(viewModel.ListData[indexPath.row].sinaMatchDataUrl != ""){
+            cell.accessoryType = .disclosureIndicator
+        }else{
+                cell.accessoryType = .none
+        }
+        
         cell.InitConfig(viewModel.ListData[indexPath.row])
         return cell
         
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if(viewModel.ListData[indexPath.row].sinaMatchDataUrl != ""){
+            let  vc = MCWebViewController(url: viewModel.ListData[indexPath.row].sinaMatchDataUrl, ProcesscColor: CommonFunction.SystemColor())
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
+
     }
     
 
