@@ -637,41 +637,12 @@
 			path = ProjectFrameworkUITests;
 			sourceTree = "<group>";
 		};
-		27BCF4801F7D1E83000BCDAF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		27BCF4811F7D1E89000BCDAF /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = ViewModel;
-			path = ProjectFramework/ProjectMainUI/Home/ViewModel;
-			sourceTree = SOURCE_ROOT;
-		};
 		27BCF4831F7D1EA1000BCDAF /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				27BCF48B1F7D2A64000BCDAF /* PlayGameModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		27BCF4851F7D1ECD000BCDAF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		27BCF4861F7D1ED4000BCDAF /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		27E1420F1F7D40ED00E27C6E /* ViewModel */ = {
@@ -903,7 +874,6 @@
 				1CFECFBB1F7D575A008E5864 /* ZhongChao.storyboard */,
 				1CFECFB31F7D575A008E5864 /* PulickNewsCell.swift */,
 				1CFECFB41F7D575A008E5864 /* PulickNewsCell.xib */,
-				27BCF4811F7D1E89000BCDAF /* ViewModel */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -940,6 +910,34 @@
 				5F1CC6AB1F7CD5F8003A156E /* MineCenter.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5F1CC6BA1F7DD925003A156E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5F1CC6BB1F7DD939003A156E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5F1CC6BC1F7DDA3D003A156E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5F1CC6BD1F7DDA45003A156E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		5F6A7E4C1F79FE4A008C26C9 /* Login */ = {
@@ -1061,10 +1059,10 @@
 		5FF1FF8E1F7CA51B00716BBD /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				27BCF4861F7D1ED4000BCDAF /* ViewModel */,
-				27BCF4851F7D1ECD000BCDAF /* Model */,
+				5F1CC6BB1F7DD939003A156E /* Model */,
 				5F1CC69F1F7CD26E003A156E /* View */,
 				5F1CC69E1F7CD260003A156E /* Controller */,
+				5F1CC6BA1F7DD925003A156E /* ViewModel */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -1072,10 +1070,10 @@
 		5FF1FF8F1F7CA52700716BBD /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				27E1420F1F7D40ED00E27C6E /* ViewModel */,
 				27BCF4831F7D1EA1000BCDAF /* Model */,
 				5F1CC69B1F7CD1D0003A156E /* View */,
 				5F1CC69A1F7CD1CA003A156E /* Controller */,
+				27E1420F1F7D40ED00E27C6E /* ViewModel */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -1083,9 +1081,10 @@
 		5FF1FF901F7CA52E00716BBD /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				27BCF4801F7D1E83000BCDAF /* Model */,
+				5F1CC6BD1F7DDA45003A156E /* Model */,
 				5F1CC6971F7CD192003A156E /* View */,
 				5F1CC6961F7CD18D003A156E /* Controller */,
+				5F1CC6BC1F7DDA3D003A156E /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
