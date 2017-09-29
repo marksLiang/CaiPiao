@@ -1,24 +1,27 @@
 //
-//  PulickNewsCell.swift
+//  PulickVideoCell.swift
 //  ProjectFramework
 //
-//  Created by 梁元峰 on 2017/9/28.
+//  Created by 恋康科技 on 2017/9/29.
 //  Copyright © 2017年 HCY. All rights reserved.
 //
 
 import UIKit
 
-class PulickNewsCell: UITableViewCell {
+class PulickVideoCell: UITableViewCell {
 
     @IBOutlet weak var newsImage: UIImageView!
     @IBOutlet weak var newsTitle: UILabel!
+    @IBOutlet weak var videoIcon: UIImageView!
     @IBOutlet weak var newsTime: UILabel!
     @IBOutlet weak var newsViews: UILabel!
     @IBOutlet weak var newsComment: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        videoIcon.layer.cornerRadius = videoIcon.frame.width/2
+        videoIcon.clipsToBounds = true
+        videoIcon.backgroundColor = UIColor.black.withAlphaComponent(0.4)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

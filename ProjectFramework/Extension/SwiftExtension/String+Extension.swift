@@ -44,9 +44,11 @@ extension  String {
     ///注意，格式必须正确 只接受 yyyy-MM-dd HH:mm:ss 类型字符 否则转换出错
     func CompareCurretTime()->String{
         //把字符串转为NSdate
+        let timeStamp = Int(self)
+        let timeInterval:TimeInterval = TimeInterval(timeStamp!)
         let dateFormatter =   DateFormatter()
         dateFormatter.dateFormat="yyyy-MM-dd HH:mm:ss"
-        let date:Date=dateFormatter.date(from: self)!
+        let date = Date(timeIntervalSince1970: timeInterval)
         
         let curDate = Date()
         let  time:TimeInterval  = -date.timeIntervalSince(curDate)
@@ -54,7 +56,6 @@ extension  String {
         let year:Int = (Int)(curDate.currentYear - date.currentYear);
         let month:Int = (Int)( curDate.currentMonth - date.currentMonth);
         let day:Int = (Int)(curDate.currentDay - date.currentDay);
-        
         var  retTime:TimeInterval = 1.0;
         
         // 小于一小时

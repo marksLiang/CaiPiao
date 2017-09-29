@@ -71,11 +71,11 @@ class HomeMain: UIViewController {
             .viewBackgroundColor(UIColor.white),
             .selectionIndicatorColor(UIColor.black),
             .bottomMenuHairlineColor(UIColor.clear),
-            .menuItemFont(UIFont.systemFont(ofSize: 12)),
+            .menuItemFont(UIFont.systemFont(ofSize: 13)),
             .selectedMenuItemLabelColor(UIColor.black),
             .unselectedMenuItemLabelColor(UIColor.gray),
             .menuHeight(44.0),
-            .menuItemWidth(50.0),
+            .menuItemWidth(55.0),
             .centerMenuItems(true),
             .scrollEnabled(true),
             .enableHorizontalBounce(false)

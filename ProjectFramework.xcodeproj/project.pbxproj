@@ -127,6 +127,11 @@
 		5F6A7E1A1F78F332008C26C9 /* LYFButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6A7E191F78F332008C26C9 /* LYFButtonBar.swift */; };
 		5F94F13E1F7A436600A8A2DA /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F94F13D1F7A436600A8A2DA /* LoginModel.swift */; };
 		5F94F1401F7A46D200A8A2DA /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F94F13F1F7A46D200A8A2DA /* RegisterModel.swift */; };
+		5FBDA6301F7DE2DC00B58F69 /* HotSpotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBDA62F1F7DE2DC00B58F69 /* HotSpotModel.swift */; };
+		5FBDA6321F7DE79800B58F69 /* HotSpotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBDA6311F7DE79800B58F69 /* HotSpotViewModel.swift */; };
+		5FBDA6341F7DF30400B58F69 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBDA6331F7DF30400B58F69 /* BaseModel.swift */; };
+		5FBDA63B1F7E41FA00B58F69 /* PulickVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBDA6391F7E41FA00B58F69 /* PulickVideoCell.swift */; };
+		5FBDA63C1F7E41FA00B58F69 /* PulickVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FBDA63A1F7E41FA00B58F69 /* PulickVideoCell.xib */; };
 		5FCB6B241F6F99E600F2857E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FCB6B231F6F99E600F2857E /* OpenGLES.framework */; };
 		5FCB6B2C1F6F9E6000F2857E /* DOPDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB6B291F6F9E5F00F2857E /* DOPDropDownMenu.m */; };
 		5FCB6B2D1F6F9E6000F2857E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5FCB6B2A1F6F9E5F00F2857E /* LICENSE */; };
@@ -406,6 +411,11 @@
 		5FA873481F7A29CA00F76810 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		5FA873491F7A29CA00F76810 /* registerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewCell.swift; sourceTree = "<group>"; };
 		5FA8734E1F7A29D800F76810 /* Login2Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Login2Resource.bundle; sourceTree = "<group>"; };
+		5FBDA62F1F7DE2DC00B58F69 /* HotSpotModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotSpotModel.swift; sourceTree = "<group>"; };
+		5FBDA6311F7DE79800B58F69 /* HotSpotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotSpotViewModel.swift; sourceTree = "<group>"; };
+		5FBDA6331F7DF30400B58F69 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		5FBDA6391F7E41FA00B58F69 /* PulickVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulickVideoCell.swift; sourceTree = "<group>"; };
+		5FBDA63A1F7E41FA00B58F69 /* PulickVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PulickVideoCell.xib; sourceTree = "<group>"; };
 		5FCB6B231F6F99E600F2857E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		5FCB6B281F6F9E5F00F2857E /* DOPDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOPDropDownMenu.h; sourceTree = "<group>"; };
 		5FCB6B291F6F9E5F00F2857E /* DOPDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOPDropDownMenu.m; sourceTree = "<group>"; };
@@ -882,6 +892,8 @@
 				1CFECFBB1F7D575A008E5864 /* ZhongChao.storyboard */,
 				1CFECFB31F7D575A008E5864 /* PulickNewsCell.swift */,
 				1CFECFB41F7D575A008E5864 /* PulickNewsCell.xib */,
+				5FBDA6391F7E41FA00B58F69 /* PulickVideoCell.swift */,
+				5FBDA63A1F7E41FA00B58F69 /* PulickVideoCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -941,6 +953,7 @@
 		5F1CC6BC1F7DDA3D003A156E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5FBDA6311F7DE79800B58F69 /* HotSpotViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -948,6 +961,7 @@
 		5F1CC6BD1F7DDA45003A156E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5FBDA62F1F7DE2DC00B58F69 /* HotSpotModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1289,6 +1303,7 @@
 				6F4904D01F186E8800F74691 /* CreatedbBase.swift */,
 				6F4904D21F186E9200F74691 /* MainTabBarController.swift */,
 				6F4904D41F186E9800F74691 /* AppResultModel.swift */,
+				5FBDA6331F7DF30400B58F69 /* BaseModel.swift */,
 				5F6A7E191F78F332008C26C9 /* LYFButtonBar.swift */,
 			);
 			path = BaseClass;
@@ -1446,7 +1461,7 @@
 				TargetAttributes = {
 					27609BCB1CB257810041E8B7 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = F5BJ32YABV;
+						DevelopmentTeam = HVZA4NK9EV;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -1504,6 +1519,7 @@
 				27609BD71CB257810041E8B7 /* Assets.xcassets in Resources */,
 				6F45EB5B1EF8F90C00562709 /* compose_guide_check_box_right@2x.png in Resources */,
 				27609BFE1CB257E40041E8B7 /* Podfile in Resources */,
+				5FBDA63C1F7E41FA00B58F69 /* PulickVideoCell.xib in Resources */,
 				1CFECFBC1F7D575A008E5864 /* ChinaBasketball.storyboard in Resources */,
 				1CFECFC21F7D575A008E5864 /* InternationalFootball.storyboard in Resources */,
 				6F45EB5E1EF8F90C00562709 /* navigationbar_back_dark@3x.png in Resources */,
@@ -1704,6 +1720,7 @@
 				6F4904C01F186DBA00F74691 /* UIImage+Extension.swift in Sources */,
 				1CFECFE51F7D5799008E5864 /* HotSpot.swift in Sources */,
 				5F29FEAC1F7A5EA9004B41FE /* registerViewController.swift in Sources */,
+				5FBDA6301F7DE2DC00B58F69 /* HotSpotModel.swift in Sources */,
 				5F1CC6A81F7CD55D003A156E /* MineCenter.swift in Sources */,
 				5FCB6B2C1F6F9E6000F2857E /* DOPDropDownMenu.m in Sources */,
 				6F45EB501EF8F90C00562709 /* JLALAssetGroupViewController.m in Sources */,
@@ -1711,6 +1728,7 @@
 				6F4905241F186F2C00F74691 /* MultilevelCategoriesTableViewController.swift in Sources */,
 				6F45EB681EF8F90C00562709 /* JLPhoto.m in Sources */,
 				2E12CB121E6F1E6F009527BA /* TZImageManager.m in Sources */,
+				5FBDA6321F7DE79800B58F69 /* HotSpotViewModel.swift in Sources */,
 				6F91AD681EBC5BE200A9E617 /* HcdPopMenuView.m in Sources */,
 				2E12CB071E6F1E6F009527BA /* MHSheetView.m in Sources */,
 				1CFECFE11F7D5799008E5864 /* DeJia.swift in Sources */,
@@ -1741,6 +1759,7 @@
 				5FCB6B6E1F6FC98400F2857E /* TAAnimatedDotView.m in Sources */,
 				6F4904C61F186DBA00F74691 /* UITextField+Extension.swift in Sources */,
 				6F4904C71F186DBA00F74691 /* UIToolbar+Extension.swift in Sources */,
+				5FBDA63B1F7E41FA00B58F69 /* PulickVideoCell.swift in Sources */,
 				6F4904D51F186E9800F74691 /* AppResultModel.swift in Sources */,
 				6F45EB561EF8F90C00562709 /* UIView+Animation.m in Sources */,
 				27BCF48C1F7D2A64000BCDAF /* PlayGameModel.swift in Sources */,
@@ -1756,6 +1775,7 @@
 				6F45EB6A1EF8F90C00562709 /* JLPieProgressView.m in Sources */,
 				1CFECFEB1F7D5799008E5864 /* Video.swift in Sources */,
 				27609BD01CB257810041E8B7 /* AppDelegate.swift in Sources */,
+				5FBDA6341F7DF30400B58F69 /* BaseModel.swift in Sources */,
 				27E142121F7D421B00E27C6E /* PlayGameViewModel.swift in Sources */,
 				6F4904BA1F186DBA00F74691 /* FMDatabase+Extension.swift in Sources */,
 				2E12CB161E6F1E6F009527BA /* TZPhotoPreviewCell.m in Sources */,
@@ -1923,7 +1943,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = F5BJ32YABV;
+				DEVELOPMENT_TEAM = HVZA4NK9EV;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1969,7 +1989,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = F5BJ32YABV;
+				DEVELOPMENT_TEAM = HVZA4NK9EV;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
