@@ -47,13 +47,15 @@ class FeedbackViewController: UIViewController {
             return
         }
         
-        let parameters = ["msg":Msg_text.textview?.text!]
-        let url = "apphome/feedBack"
-        CommonFunction.Global_Get(entity: nil, IsListData: false, url: url, isHUD: true, isHUDMake: false, parameters:  parameters as NSDictionary?, Model: { (result) in
-            
-      _ = self.navigationController?.popViewController(animated: true)
-            
-        }, ModelNoAnalysis: nil)
+        CommonFunction.HUD("提交成功", type: .success)
+        
+//        let parameters = ["msg":Msg_text.textview?.text!]
+//        let url = "apphome/feedBack"
+//        CommonFunction.Global_Get(entity: nil, IsListData: false, url: url, isHUD: true, isHUDMake: false, parameters:  parameters as NSDictionary?, Model: { (result) in
+//
+//      _ = self.navigationController?.popViewController(animated: true)
+//
+//        }, ModelNoAnalysis: nil)
         
     
         

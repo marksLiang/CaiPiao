@@ -77,6 +77,11 @@ class MineCenter:UIViewController,UITableViewDelegate,UITableViewDataSource
                 headview.ImageBtn.setImage(UIImage.init(named: "userIcon_defualt"), for: .normal)
             }
             
+        }else{
+            let headview = self._MyHeadUIView as! MyHeadUIView
+            headview.Nametext.text="有你更精彩"
+            headview.loginbtn.isHidden=true
+            headview.registerbtn.isHidden=true
         }
     }
     
@@ -94,7 +99,10 @@ class MineCenter:UIViewController,UITableViewDelegate,UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if(section==0){
-            return 2
+            if(Global_Jad.ID != 0 && Global_Jad.CompanyName != ""){
+                return 2
+            }
+            return 1
         }
         if(section==1){
             return 2
@@ -117,15 +125,22 @@ class MineCenter:UIViewController,UITableViewDelegate,UITableViewDataSource
         cell.selectionStyle = .none
         cell.InitConfig("")
         if(indexPath.section==0){
-            if(indexPath.row==0){
-                cell.img.image=UIImage(named: "我的信息")  //图标格式 42*42  @2x
-                cell.lab.text="我的信息"
+             if(Global_Jad.ID != 0 && Global_Jad.CompanyName != "" && Global_Jad.isShowCell==true){
+                if(indexPath.row==0){
+                    cell.img.image=UIImage(named: "奖金")  //图标格式 42*42  @2x
+                    cell.lab.text="我的奖金"
+                 }
+                if(indexPath.row==1){
+                    cell.img.image=UIImage(named: "我的消息")
+                    cell.lab.text="我的消息"
+                }
+             }else{
+                if(indexPath.row==0){
+                    cell.img.image=UIImage(named: "我的消息")
+                    cell.lab.text="我的消息"
+                }
             }
-            if(indexPath.row==1){
-                cell.img.image=UIImage(named: "我的消息")
-                cell.lab.text="我的消息"
-            }
-          
+ 
         }
         if(indexPath.section==1){
             if(indexPath.row==0){
@@ -158,19 +173,35 @@ class MineCenter:UIViewController,UITableViewDelegate,UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if(indexPath.section==0){
-            if(indexPath.row==0){
-                //个人信息
-                print("点击了--个人信息")
-                let vc = CommonFunction.ViewControllerWithStoryboardName("Myinfo", Identifier: "Myinfo") as! MyInfoViewController 
-                self.navigationController?.show(vc, sender: nil)
+            if(Global_Jad.ID != 0 && Global_Jad.CompanyName != "" &&  Global_Jad.isShowCell==true){
+                
+                if(indexPath.row==0){
+                    //个人信息
+                    print("点击了--奖金")
+                    
+                    let  vc = MCWebViewController(url: Global_Jad.JumpURL, ProcesscColor: CommonFunction.SystemColor())
+                    self.navigationController?.pushViewController(vc, animated: true)
+                    
+                    
+                }
+                if(indexPath.row==1){
+                    //我的消息
+                    print("点击了--我的消息")
+                    let vc = MyMsgViewController()
+                    self.navigationController?.pushViewController(vc, animated: true)
+                    
+                }
+                
+            }else{
+                if(indexPath.row==0){
+                    //我的消息
+                    print("点击了--我的消息")
+                    let vc = MyMsgViewController()
+                    self.navigationController?.pushViewController(vc, animated: true)
+                    
+                }
             }
-            if(indexPath.row==1){
-                //我的消息
-                   print("点击了--我的消息")
-                let vc = MyMsgViewController()
-                self.navigationController?.pushViewController(vc, animated: true)
-             
-            }
+          
           
             
         }

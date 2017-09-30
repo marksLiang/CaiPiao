@@ -32,7 +32,7 @@ class AboutViewController: UIViewController {
         let lab1 = UILabel(frame: CGRect(x: 20, y: Image.frame.maxX+50, width: self.view.frame.width-40, height: 20))
         lab1.font=UIFont.systemFont(ofSize: 13)
         lab1.textAlignment = .center
-        lab1.text="红彩V1.0"
+        lab1.text="体吧V1.0"
         
         self.view.addSubview(lab1)
         
@@ -49,7 +49,7 @@ class AboutViewController: UIViewController {
         let lab3 = UILabel(frame: CGRect(x: 20, y: lab2.frame.maxY+30, width: self.view.frame.width-40, height: 20))
         lab3.font=UIFont.systemFont(ofSize: 13)
         lab3.textAlignment = .center
-        lab3.text="Copyright©枣庄云彩信息科技有限公司"
+        lab3.text=""
         lab3.textColor=UIColor.gray
         self.view.addSubview(lab3)
         
