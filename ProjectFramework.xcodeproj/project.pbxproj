@@ -152,6 +152,11 @@
 		5FBDA6341F7DF30400B58F69 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBDA6331F7DF30400B58F69 /* BaseModel.swift */; };
 		5FBDA63B1F7E41FA00B58F69 /* PulickVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBDA6391F7E41FA00B58F69 /* PulickVideoCell.swift */; };
 		5FBDA63C1F7E41FA00B58F69 /* PulickVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FBDA63A1F7E41FA00B58F69 /* PulickVideoCell.xib */; };
+		5FBDA63E1F7F769700B58F69 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBDA63D1F7F769700B58F69 /* VideoViewModel.swift */; };
+		5FBDA6401F7F7F2F00B58F69 /* NewsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBDA63F1F7F7F2F00B58F69 /* NewsDetail.swift */; };
+		5FBDA6421F7F804A00B58F69 /* NewsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FBDA6411F7F804A00B58F69 /* NewsDetail.storyboard */; };
+		5FBDA6461F7F836B00B58F69 /* NewsDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBDA6451F7F836B00B58F69 /* NewsDetailViewModel.swift */; };
+		5FBDA6481F7F840400B58F69 /* NewsDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBDA6471F7F840400B58F69 /* NewsDetailModel.swift */; };
 		5FCB6B241F6F99E600F2857E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FCB6B231F6F99E600F2857E /* OpenGLES.framework */; };
 		5FCB6B2C1F6F9E6000F2857E /* DOPDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB6B291F6F9E5F00F2857E /* DOPDropDownMenu.m */; };
 		5FCB6B2D1F6F9E6000F2857E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5FCB6B2A1F6F9E5F00F2857E /* LICENSE */; };
@@ -163,6 +168,7 @@
 		5FCB6B711F6FC98400F2857E /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB6B681F6FC98400F2857E /* SDCollectionViewCell.m */; };
 		5FCB6B721F6FC98400F2857E /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB6B6A1F6FC98400F2857E /* SDCycleScrollView.m */; };
 		5FCB6B731F6FC98400F2857E /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB6B6C1F6FC98400F2857E /* UIView+SDExtension.m */; };
+		5FCC0F841F7F9F23000702C9 /* NewsCommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCC0F831F7F9F23000702C9 /* NewsCommentModel.swift */; };
 		6F1F879C1E9F07D4008E9B09 /* PanoramaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F879B1E9F07D4008E9B09 /* PanoramaViewController.m */; };
 		6F22E38B1E9B133E0090291F /* XHStarRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F22E38A1E9B133E0090291F /* XHStarRateView.m */; };
 		6F45EB501EF8F90C00562709 /* JLALAssetGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F45EB211EF8F90B00562709 /* JLALAssetGroupViewController.m */; };
@@ -456,6 +462,11 @@
 		5FBDA6331F7DF30400B58F69 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		5FBDA6391F7E41FA00B58F69 /* PulickVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulickVideoCell.swift; sourceTree = "<group>"; };
 		5FBDA63A1F7E41FA00B58F69 /* PulickVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PulickVideoCell.xib; sourceTree = "<group>"; };
+		5FBDA63D1F7F769700B58F69 /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
+		5FBDA63F1F7F7F2F00B58F69 /* NewsDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetail.swift; sourceTree = "<group>"; };
+		5FBDA6411F7F804A00B58F69 /* NewsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsDetail.storyboard; sourceTree = "<group>"; };
+		5FBDA6451F7F836B00B58F69 /* NewsDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewModel.swift; sourceTree = "<group>"; };
+		5FBDA6471F7F840400B58F69 /* NewsDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailModel.swift; sourceTree = "<group>"; };
 		5FCB6B231F6F99E600F2857E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		5FCB6B281F6F9E5F00F2857E /* DOPDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOPDropDownMenu.h; sourceTree = "<group>"; };
 		5FCB6B291F6F9E5F00F2857E /* DOPDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOPDropDownMenu.m; sourceTree = "<group>"; };
@@ -475,6 +486,7 @@
 		5FCB6B6A1F6FC98400F2857E /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
 		5FCB6B6B1F6FC98400F2857E /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
 		5FCB6B6C1F6FC98400F2857E /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		5FCC0F831F7F9F23000702C9 /* NewsCommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCommentModel.swift; sourceTree = "<group>"; };
 		602DC37D8C90A147F5A87D90 /* Pods_ProjectFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1F879A1E9F07D4008E9B09 /* PanoramaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanoramaViewController.h; sourceTree = "<group>"; };
 		6F1F879B1E9F07D4008E9B09 /* PanoramaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanoramaViewController.m; sourceTree = "<group>"; };
@@ -915,6 +927,7 @@
 				1CFECFDC1F7D5799008E5864 /* YiJia.swift */,
 				1CFECFDD1F7D5799008E5864 /* YingChao.swift */,
 				1CFECFDE1F7D5799008E5864 /* ZhongChao.swift */,
+				5FBDA63F1F7F7F2F00B58F69 /* NewsDetail.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -944,6 +957,7 @@
 				1CFECFB41F7D575A008E5864 /* PulickNewsCell.xib */,
 				5FBDA6391F7E41FA00B58F69 /* PulickVideoCell.swift */,
 				5FBDA63A1F7E41FA00B58F69 /* PulickVideoCell.xib */,
+				5FBDA6411F7F804A00B58F69 /* NewsDetail.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1021,6 +1035,8 @@
 				1C2DC0B31F7ECBA500A64006 /* YiJiaViewModel.swift */,
 				1C2DC0B51F7ECC8200A64006 /* OUGuanViewModel.swift */,
 				1C2DC0B71F7ECCFE00A64006 /* QuanYunHuiViewModel.swift */,
+				5FBDA63D1F7F769700B58F69 /* VideoViewModel.swift */,
+				5FBDA6451F7F836B00B58F69 /* NewsDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1030,6 +1046,8 @@
 			children = (
 				5FBDA62F1F7DE2DC00B58F69 /* HotSpotModel.swift */,
 				1C2DC0991F7E9C7700A64006 /* HighlightsModel.swift */,
+				5FBDA6471F7F840400B58F69 /* NewsDetailModel.swift */,
+				5FCC0F831F7F9F23000702C9 /* NewsCommentModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1529,7 +1547,7 @@
 				TargetAttributes = {
 					27609BCB1CB257810041E8B7 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = F5BJ32YABV;
+						DevelopmentTeam = HVZA4NK9EV;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -1610,6 +1628,7 @@
 				5F1CC6AA1F7CD569003A156E /* PlayGame.storyboard in Resources */,
 				1CFECFC61F7D575A008E5864 /* PulickNewsCell.xib in Resources */,
 				5F1CC6B41F7CEE43003A156E /* Main.storyboard in Resources */,
+				5FBDA6421F7F804A00B58F69 /* NewsDetail.storyboard in Resources */,
 				1CFECFC11F7D575A008E5864 /* HotSpot.storyboard in Resources */,
 				1CFECFBD1F7D575A008E5864 /* ChinaFootball.storyboard in Resources */,
 				2E12CB041E6F1E6F009527BA /* MHSheetFoot.xib in Resources */,
@@ -1755,12 +1774,14 @@
 				6F4904C81F186DBA00F74691 /* UIViewController+Extension.swift in Sources */,
 				2E12CB111E6F1E6F009527BA /* TZAssetModel.m in Sources */,
 				5F1CC6A61F7CD538003A156E /* PlayGame.swift in Sources */,
+				5FBDA6461F7F836B00B58F69 /* NewsDetailViewModel.swift in Sources */,
 				6FF51D2C1EBD7E9E00021790 /* MCWebViewController.swift in Sources */,
 				6F4904BF1F186DBA00F74691 /* UIColor+Extension.swift in Sources */,
 				1C2DC0B01F7EC9B900A64006 /* DeJiaViewModel.swift in Sources */,
 				6FF51D2A1EBD7E9E00021790 /* CustomTextView.swift in Sources */,
 				5F94F13E1F7A436600A8A2DA /* LoginModel.swift in Sources */,
 				6F4904B71F186DBA00F74691 /* Date+Extension.swift in Sources */,
+				5FBDA63E1F7F769700B58F69 /* VideoViewModel.swift in Sources */,
 				5F29FEAD1F7A5EE4004B41FE /* LoginViewControllerTwo.swift in Sources */,
 				6FF51D441EBD7EC500021790 /* ZFTimerCollectionReusableView.m in Sources */,
 				6F45EB531EF8F90C00562709 /* JLThumbnailViewController.m in Sources */,
@@ -1797,6 +1818,7 @@
 				6F4904C51F186DBA00F74691 /* UITapGestureRecognizer+Extension.swift in Sources */,
 				6F4904C01F186DBA00F74691 /* UIImage+Extension.swift in Sources */,
 				27E1421C1F7E93D200E27C6E /* MyMsgViewController.swift in Sources */,
+				5FBDA6401F7F7F2F00B58F69 /* NewsDetail.swift in Sources */,
 				1CFECFE51F7D5799008E5864 /* HotSpot.swift in Sources */,
 				5F29FEAC1F7A5EA9004B41FE /* registerViewController.swift in Sources */,
 				5FBDA6301F7DE2DC00B58F69 /* HotSpotModel.swift in Sources */,
@@ -1814,12 +1836,14 @@
 				1CFECFE11F7D5799008E5864 /* DeJia.swift in Sources */,
 				5F29FEA91F7A5EA0004B41FE /* ValidationResultEnum.swift in Sources */,
 				1CFECFEE1F7D5799008E5864 /* YingChao.swift in Sources */,
+				5FCC0F841F7F9F23000702C9 /* NewsCommentModel.swift in Sources */,
 				1CFECFE21F7D5799008E5864 /* FaJia.swift in Sources */,
 				6F4904C21F186DBA00F74691 /* UIImageView+Extension.swift in Sources */,
 				6F45EB691EF8F90C00562709 /* JLPhotoBrowser.m in Sources */,
 				5FCB6B721F6FC98400F2857E /* SDCycleScrollView.m in Sources */,
 				6F4904BD1F186DBA00F74691 /* UIButton+Extension.swift in Sources */,
 				2E12CB0E1E6F1E6F009527BA /* UIView+PYExtension.m in Sources */,
+				5FBDA6481F7F840400B58F69 /* NewsDetailModel.swift in Sources */,
 				6F4904D31F186E9200F74691 /* MainTabBarController.swift in Sources */,
 				1CFECFDF1F7D5799008E5864 /* ChinaBasketball.swift in Sources */,
 				27E142141F7E07D500E27C6E /* MyCell.swift in Sources */,
@@ -2033,7 +2057,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = F5BJ32YABV;
+				DEVELOPMENT_TEAM = HVZA4NK9EV;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2079,7 +2103,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = F5BJ32YABV;
+				DEVELOPMENT_TEAM = HVZA4NK9EV;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

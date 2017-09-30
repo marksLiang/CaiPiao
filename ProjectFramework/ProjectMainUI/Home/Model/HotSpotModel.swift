@@ -32,7 +32,7 @@ class HotSpotModel: NSObject {
     var top=false//是否显示置顶
     var index=0
     var Hash=""
-    var videos = [""]
+    var videos:[videosList]?
     var image=""
     var lottery=false//是否彩票
     var url=""//视频地址
@@ -43,4 +43,11 @@ class HotSpotModel: NSObject {
     var original=false//原始
     var comment=0//评论数
     var first=false//是否第一
+    override static func mj_objectClassInArray() -> [AnyHashable : Any]! {
+        return ["videos":videosList.self]
+    }
+}
+class videosList: NSObject {
+    var thumb=""
+    var url=""
 }

@@ -17,7 +17,7 @@ class HomeMain: UIViewController {
         
         let controller1 = CommonFunction.ViewControllerWithStoryboardName("HotSpot", Identifier: "HotSpot") as! HotSpot
         let controller2 = CommonFunction.ViewControllerWithStoryboardName("Highlights", Identifier: "Highlights") as!  Highlights
-        let controller3 = CommonFunction.ViewControllerWithStoryboardName("Video", Identifier: "Video") as!  Video
+        //let controller3 = CommonFunction.ViewControllerWithStoryboardName("Video", Identifier: "Video") as!  Video
         let controller4 = CommonFunction.ViewControllerWithStoryboardName("InternationalFootball", Identifier: "InternationalFootball") as!  InternationalFootball
         let controller5 = CommonFunction.ViewControllerWithStoryboardName("ChinaFootball", Identifier: "ChinaFootball") as!  ChinaFootball
         let controller6 = CommonFunction.ViewControllerWithStoryboardName("Sports", Identifier: "Sports") as!  Sports
@@ -34,7 +34,7 @@ class HomeMain: UIViewController {
         
         controller1.title = "热门"
         controller2.title = "集锦"
-        controller3.title = "视频"
+        //controller3.title = "视频"
         controller4.title = "国际足球"
         controller5.title = "中国足球"
         controller6.title = "综合体育"
@@ -51,7 +51,7 @@ class HomeMain: UIViewController {
         
         controllerArray.append(controller1)
         controllerArray.append(controller2)
-        controllerArray.append(controller3)
+        //controllerArray.append(controller3)
         controllerArray.append(controller4)
         controllerArray.append(controller5)
         controllerArray.append(controller6)

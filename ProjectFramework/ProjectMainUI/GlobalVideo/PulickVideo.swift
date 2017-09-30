@@ -21,7 +21,7 @@ class PulickVideo: UIViewController {
         
     }
     private func initVideo() -> Void{
-        let url = URL(string: "http://video.a8tiyu.com/%E9%95%BF%E5%8F%91%E6%A2%85%E8%A5%BF.mp4")
+        let url = URL(string: urlString)
         if url != nil {
             player = VGPlayer(URL: url!)
         }

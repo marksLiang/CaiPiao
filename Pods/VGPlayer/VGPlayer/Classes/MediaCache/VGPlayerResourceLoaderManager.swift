@@ -52,8 +52,8 @@ open class VGPlayerResourceLoaderManager: NSObject {
     }
     
     open func playerItem(_ url: URL) -> AVPlayerItem {
-        let assetURL = self.assetURL(url)
-        let urlAsset = AVURLAsset(url: assetURL!, options: nil)
+        //let assetURL = self.assetURL(url)
+        let urlAsset = AVURLAsset(url: url, options: nil)
         urlAsset.resourceLoader.setDelegate(self, queue: DispatchQueue.main)
         let playerItem = AVPlayerItem(asset: urlAsset)
         if #available(iOS 9.0, *) {

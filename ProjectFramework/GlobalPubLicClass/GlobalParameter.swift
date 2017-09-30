@@ -84,10 +84,10 @@ var Global_UserInfo=MyInfoModel()          //我的信息全局
 let StartOneImageList:[String] = ["index1","index2","index4"]       //第一次启动引导页图片
 
 /// TabBarController 全局参数变量
-let TabBar_Title = ["首页","比赛","个人中心"]      //标题
-let TabBar_StoryName = ["HomeMain","PlayGame","MineCenter"]  //sb名称（UI)
-let TabBar_SelectedImage = ["homemain_select","playgame_select","minecenter_select"]        //选择的图片
-let TabBar_NoSelectedImage = ["homemain_normal","playgame_normal","minecenter_normal"]      //未选择图片
+let TabBar_Title = ["首页","比赛","视频","个人中心"]      //标题
+let TabBar_StoryName = ["HomeMain","PlayGame","Video","MineCenter"]  //sb名称（UI)
+let TabBar_SelectedImage = ["homemain_select","playgame_select","video_select","minecenter_select"]        //选择的图片
+let TabBar_NoSelectedImage = ["homemain_normal","playgame_normal","video_normal","minecenter_normal"]      //未选择图片
 
 
 

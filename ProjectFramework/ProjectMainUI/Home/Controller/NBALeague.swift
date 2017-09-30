@@ -66,6 +66,14 @@ class NBALeague: CustomTemplateViewController {
             return cell
         }
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if self.viewModel.ListData[indexPath.row].hasVideo == true {
+            let vc = PulickVideo()
+            vc.urlString = self.viewModel.ListData[indexPath.row].url
+            vc.videoTitle = self.viewModel.ListData[indexPath.row].title
+            self.navigationController?.show(vc, sender: self)
+        }
+    }
     //MARK: initUI
     private func initUI() -> Void{
         self.InitCongif(tableView)

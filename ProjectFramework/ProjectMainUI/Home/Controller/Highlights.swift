@@ -55,6 +55,14 @@ class Highlights: CustomTemplateViewController {
         cell.InitConfig(self.viewModel.ListData[indexPath.row])
         return cell
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        let vc = PulickVideo()
+        vc.urlString = self.viewModel.ListData[indexPath.row].sPlayUrl
+        vc.videoTitle = self.viewModel.ListData[indexPath.row].sTitle
+        self.navigationController?.show(vc, sender: self)
+
+    }
     //MARK: initUI
     private func initUI() -> Void{
         self.InitCongif(tableView)

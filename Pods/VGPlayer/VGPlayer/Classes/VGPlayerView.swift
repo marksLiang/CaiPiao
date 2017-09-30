@@ -146,7 +146,7 @@ open class VGPlayerView: UIView {
         self.playerLayer = AVPlayerLayer(player: self.vgPlayer?.player)
         self.layer.insertSublayer(self.playerLayer!, at: 0)
         self.updateDisplayerView(frame: self.bounds)
-        self.timeSlider.isUserInteractionEnabled = self.vgPlayer?.mediaFormat != .m3u8
+        // self.timeSlider.isUserInteractionEnabled = self.vgPlayer?.mediaFormat != .m3u8 
         reloadGravity()
     }
     
