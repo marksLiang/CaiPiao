@@ -30,6 +30,7 @@
 		1C2DC0BF1F7FD74000A64006 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DC0BE1F7FD74000A64006 /* UIView+Extension.swift */; };
 		1C7B18491F7FEBF70057BA66 /* UserCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7B18481F7FEBF70057BA66 /* UserCommentCell.swift */; };
 		1C7B184B1F800C410057BA66 /* HomeGuangGao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7B184A1F800C410057BA66 /* HomeGuangGao.swift */; };
+		1C912E531F8021C6009BFF3E /* PulickShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C912E521F8021C6009BFF3E /* PulickShowView.swift */; };
 		1CFECFBC1F7D575A008E5864 /* ChinaBasketball.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CFECFAA1F7D575A008E5864 /* ChinaBasketball.storyboard */; };
 		1CFECFBD1F7D575A008E5864 /* ChinaFootball.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CFECFAB1F7D575A008E5864 /* ChinaFootball.storyboard */; };
 		1CFECFBE1F7D575A008E5864 /* DeJia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CFECFAC1F7D575A008E5864 /* DeJia.storyboard */; };
@@ -297,6 +298,7 @@
 		1C2DC0BE1F7FD74000A64006 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		1C7B18481F7FEBF70057BA66 /* UserCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCommentCell.swift; sourceTree = "<group>"; };
 		1C7B184A1F800C410057BA66 /* HomeGuangGao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGuangGao.swift; sourceTree = "<group>"; };
+		1C912E521F8021C6009BFF3E /* PulickShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulickShowView.swift; sourceTree = "<group>"; };
 		1CFECFAA1F7D575A008E5864 /* ChinaBasketball.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChinaBasketball.storyboard; sourceTree = "<group>"; };
 		1CFECFAB1F7D575A008E5864 /* ChinaFootball.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChinaFootball.storyboard; sourceTree = "<group>"; };
 		1CFECFAC1F7D575A008E5864 /* DeJia.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DeJia.storyboard; sourceTree = "<group>"; };
@@ -657,6 +659,7 @@
 			isa = PBXGroup;
 			children = (
 				1C2DC0BA1F7ECE3700A64006 /* PulickVideo.swift */,
+				1C912E521F8021C6009BFF3E /* PulickShowView.swift */,
 			);
 			path = GlobalVideo;
 			sourceTree = "<group>";
@@ -1883,6 +1886,7 @@
 				6F4904C71F186DBA00F74691 /* UIToolbar+Extension.swift in Sources */,
 				5FBDA63B1F7E41FA00B58F69 /* PulickVideoCell.swift in Sources */,
 				1C2DC0A81F7EC50000A64006 /* NBALeagueViewModel.swift in Sources */,
+				1C912E531F8021C6009BFF3E /* PulickShowView.swift in Sources */,
 				6F4904D51F186E9800F74691 /* AppResultModel.swift in Sources */,
 				6F45EB561EF8F90C00562709 /* UIView+Animation.m in Sources */,
 				27BCF48C1F7D2A64000BCDAF /* PlayGameModel.swift in Sources */,

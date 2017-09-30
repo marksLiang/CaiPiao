@@ -265,6 +265,8 @@ final class   CommonFunction {
     static let Model = UIDevice.current.model
     /// 设备区域化型号 如 A1533
     static let LocalizedModel = UIDevice.current.localizedModel
+    /// 根视图
+    static let RootView = UIApplication.shared.keyWindow?.rootViewController?.view
     // MARK:颜色块
     /// 颜色
     static func RGBA(_ r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat) -> UIColor {return UIColor(red: (r)/255.0, green: (g)/255.0, blue: (b)/255.0, alpha: (a))}

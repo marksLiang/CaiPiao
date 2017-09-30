@@ -19,6 +19,7 @@ class HotSpot: CustomTemplateViewController {
         shuffling?.pageControlRightOffset = -(CommonFunction.kScreenWidth/2 - 50)//分页控制器往右的偏移量
         return shuffling!
     }()
+    
     /*******************XIB*********************/
     @IBOutlet weak var tableView: UITableView!
     /********************  属性  ********************/
@@ -29,6 +30,7 @@ class HotSpot: CustomTemplateViewController {
     fileprivate var PageSize:  Int = 20
     fileprivate var imagesURLStrings = [String]()//轮播图
     fileprivate var textStrings = [String]()
+    fileprivate var sview:PulickShowView?
     //MARK: ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,6 +96,13 @@ class HotSpot: CustomTemplateViewController {
                     self.numberOfSections = 1
                     self.numberOfRowsInSection = self.viewModel.ListData.count
                 }
+                //MARK: 蒙层弹出框
+                self.sview = PulickShowView.init(frame: CGRect.init(x: 0, y: 0, width: CommonFunction.kScreenWidth, height: CommonFunction.kScreenHeight), close_callBackValue: {
+                    
+                }) {
+                    
+                }
+                CommonFunction.RootView?.addSubview(self.sview!)
                 self.RefreshRequest(isLoading: false, isHiddenFooter: false)
             }else{
                 self.RefreshRequest(isLoading: false, isHiddenFooter: true, isLoadError: true)
@@ -136,6 +145,7 @@ class HotSpot: CustomTemplateViewController {
         self.tableView.register(requesterNib, forCellReuseIdentifier: identifier)
         let requesterNib1 = UINib(nibName: "PulickVideoCell", bundle: nil)
         self.tableView.register(requesterNib1, forCellReuseIdentifier: identifier1)
+        //
         
     }
     
