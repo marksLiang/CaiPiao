@@ -72,6 +72,10 @@ class Sports: CustomTemplateViewController {
             vc.urlString = self.viewModel.ListData[indexPath.row].url
             vc.videoTitle = self.viewModel.ListData[indexPath.row].title
             self.navigationController?.show(vc, sender: self)
+        }else{
+            let vc = CommonFunction.ViewControllerWithStoryboardName("NewsDetail", Identifier: "NewsDetail") as! NewsDetail
+            vc.newID = self.viewModel.ListData[indexPath.row].newsId
+            self.navigationController?.show(vc, sender: self)
         }
     }
     //MARK: initUI

@@ -80,7 +80,7 @@ var NetWordStatus=false //网络状态  true连接网络，false未连接
 var Global_latitude:CLLocationDegrees=0    //全局纬度
 var Global_longitude:CLLocationDegrees=0   //全局经度
 var Global_UserInfo=MyInfoModel()          //我的信息全局
-
+var Global_Jad=JadModel()       //广告
 let StartOneImageList:[String] = ["index1","index2","index4"]       //第一次启动引导页图片
 
 /// TabBarController 全局参数变量

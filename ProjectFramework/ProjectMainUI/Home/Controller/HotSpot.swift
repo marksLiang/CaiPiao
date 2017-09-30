@@ -47,16 +47,35 @@ class HotSpot: CustomTemplateViewController {
         PageIndex = PageIndex + 1
         self.getHttpData()
     }
+    override func Error_Click() {
+        self.getHttpData()
+    }
     //MARK: 获取数据
     //获取广告
     private func getAdvertising()->Void{
-        viewModel.GetAdvertisingList { (result) in
+//        viewModel.GetAdvertisingList { (result) in
+//            if result == true {
+//                for i in 0..<self.viewModel.AdvertisingList.count{
+//                    self.imagesURLStrings.append(self.viewModel.AdvertisingList[i].pic)
+//                    self.textStrings.append(self.viewModel.AdvertisingList[i].title)
+//                }
+//                self.getHttpData()
+//            }
+//        }
+        //自己的体彩广告
+        viewModel.GetGuangGaoList { (result) in
             if result == true {
-                for i in 0..<self.viewModel.AdvertisingList.count{
-                    self.imagesURLStrings.append(self.viewModel.AdvertisingList[i].pic)
-                    self.textStrings.append(self.viewModel.AdvertisingList[i].title)
+                for i in 0..<self.viewModel.GuangGaoList.count{
+                    if i == 0 {
+                        Global_Jad=self.viewModel.GuangGaoList[i].Jad!//设置全局
+                        //debugPrint(Global_Jad.CompanyName)
+                    }
+                    self.imagesURLStrings.append(self.viewModel.GuangGaoList[i].ImgPath)
+                    self.textStrings.append(self.viewModel.GuangGaoList[i].Title)
                 }
                 self.getHttpData()
+            }else{
+                self.RefreshRequest(isLoading: false, isHiddenFooter: true, isLoadError: true)
             }
         }
     }
@@ -125,5 +144,10 @@ extension HotSpot: SDCycleScrollViewDelegate {
     //MARK: 轮播图代理
     func cycleScrollView(_ cycleScrollView: SDCycleScrollView!, didSelectItemAt index: Int) {
         debugPrint(index)
+//        let vc = CommonFunction.ViewControllerWithStoryboardName("NewsDetail", Identifier: "NewsDetail") as! NewsDetail
+//        vc.newID = self.viewModel.AdvertisingList[index].id
+//        self.navigationController?.show(vc, sender: self)
+        let  vc = MCWebViewController(url: self.viewModel.GuangGaoList[index].JumpURL, ProcesscColor: CommonFunction.SystemColor())
+        self.navigationController?.show(vc, sender: self)
     }
 }
