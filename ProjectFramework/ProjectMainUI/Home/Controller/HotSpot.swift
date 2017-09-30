@@ -143,11 +143,11 @@ class HotSpot: CustomTemplateViewController {
 extension HotSpot: SDCycleScrollViewDelegate {
     //MARK: 轮播图代理
     func cycleScrollView(_ cycleScrollView: SDCycleScrollView!, didSelectItemAt index: Int) {
-        debugPrint(index)
+        //debugPrint(index)
 //        let vc = CommonFunction.ViewControllerWithStoryboardName("NewsDetail", Identifier: "NewsDetail") as! NewsDetail
 //        vc.newID = self.viewModel.AdvertisingList[index].id
 //        self.navigationController?.show(vc, sender: self)
         let  vc = MCWebViewController(url: self.viewModel.GuangGaoList[index].JumpURL, ProcesscColor: CommonFunction.SystemColor())
-        self.navigationController?.show(vc, sender: self)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
