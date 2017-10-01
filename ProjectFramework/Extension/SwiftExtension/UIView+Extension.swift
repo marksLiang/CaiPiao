@@ -67,6 +67,23 @@ extension UIView{
         view.addSubview(lable)
         return view
     }
+    
+    ///  点击事件
+    ///
+    /// - parameter target:               传入self(一般写self就行了
+    /// - parameter actionEvent:           触发事件方法
+    /// - parameter tapExpInt:            拓展的点击Int（默认0
+    /// - parameter TapExpString:         拓展的点击String （默认“”
+    /// - parameter numberOfTapsRequired: 点击多少次触发（默认1
+    func EventClick(target:Any,actionEvent:Selector,tapExpInt:Int=0,TapExpString:String="",numberOfTapsRequired:Int=1){
+        self.isUserInteractionEnabled=true
+        ///添加tapGuestureRecognizer手势
+        let tapGR = UITapGestureRecognizer(target: target, action:actionEvent)
+        tapGR.numberOfTapsRequired = numberOfTapsRequired;//点击次数
+        tapGR.ExpTagString=TapExpString
+        tapGR.ExpTagInt=tapExpInt
+        self.addGestureRecognizer(tapGR)
+    }
 }
 
                                             

@@ -20,6 +20,7 @@ class PulickShowView: UIView {
     func  FuncCallbackValue(value:CallbackValue?){
         myCallbackValue = value //返回值
     }
+    
     lazy var imageView: UIImageView = {
         let imageView = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: CommonFunction.kScreenWidth - 60, height: (CommonFunction.kScreenWidth - 60)*1.1))
         imageView.center = self.center
@@ -47,7 +48,7 @@ class PulickShowView: UIView {
         selectButton.layer.cornerRadius = 8
         selectButton.center.x = self.imageView.center.x
         selectButton.titleLabel?.font = UIFont.systemFont(ofSize: 15)
-        selectButton.setTitle("去领取", for: .normal)
+        selectButton.setTitle("Go", for: .normal)
         selectButton.setTitleColor(UIColor.white, for: .normal)
         selectButton.addTarget(self, action: #selector(buttonClick), for: .touchUpInside)
         return selectButton
@@ -58,8 +59,14 @@ class PulickShowView: UIView {
         self.myCloseBackValue = close_callBackValue
         self.myCallbackValue = Click_callBackValue
         self.addSubview(imageView)
-        self.addSubview(closeButton)
-        self.addSubview(selectButton)
+        imageView.ImageLoad(PostUrl: Global_Jad.ImgPath)
+        imageView.EventClick(target: self, actionEvent: #selector(ImgClick))
+         if(Global_Jad.ID != 0 && Global_Jad.CompanyName != "" && Global_Jad.isClose==true ){
+            self.addSubview(closeButton)
+        }
+//        self.addSubview(selectButton)
+        
+        self.EventClick(target: self, actionEvent: #selector(bgclick))
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -70,14 +77,30 @@ class PulickShowView: UIView {
             if myCloseBackValue != nil{
                 myCloseBackValue!()
             }
-            UIView.animate(withDuration: 0.5) {
-                self.frame = CGRect.init(x: 0, y: CommonFunction.kScreenHeight, width: CommonFunction.kScreenWidth, height: CommonFunction.kScreenHeight)
-            }
+           closeView()
         }
         if button.tag == 2 {
             if myCallbackValue != nil {
                 myCallbackValue!()
             }
         }
+    }
+    
+    func closeView(){
+        UIView.animate(withDuration: 0.5) {
+            self.frame = CGRect.init(x: 0, y: CommonFunction.kScreenHeight, width: CommonFunction.kScreenWidth, height: CommonFunction.kScreenHeight)
+        }
+    }
+    
+    func bgclick(){
+      closeView()
+    }
+    
+    func ImgClick(){
+        if myCallbackValue != nil {
+            myCallbackValue!()
+        }
+        closeView()
+      
     }
 }

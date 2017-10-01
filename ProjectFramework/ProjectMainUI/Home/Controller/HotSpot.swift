@@ -96,13 +96,19 @@ class HotSpot: CustomTemplateViewController {
                     self.numberOfSections = 1
                     self.numberOfRowsInSection = self.viewModel.ListData.count
                 }
-                //MARK: 蒙层弹出框
-                self.sview = PulickShowView.init(frame: CGRect.init(x: 0, y: 0, width: CommonFunction.kScreenWidth, height: CommonFunction.kScreenHeight), close_callBackValue: {
-                    
-                }) {
-                    
+                if(Global_Jad.ID != 0 && Global_Jad.CompanyName != ""){
+                    //MARK: 蒙层弹出框
+                    self.sview = PulickShowView.init(frame: CGRect.init(x: 0, y: 0, width: CommonFunction.kScreenWidth, height: CommonFunction.kScreenHeight), close_callBackValue: {
+                        
+                    }) {
+                        
+                        let  vc = MCWebViewController(url: Global_Jad.JumpURL, ProcesscColor: CommonFunction.SystemColor())
+                        self.navigationController?.pushViewController(vc, animated: true)
+                        
+                    }
+                    CommonFunction.RootView?.addSubview(self.sview!)
                 }
-                CommonFunction.RootView?.addSubview(self.sview!)
+               
                 self.RefreshRequest(isLoading: false, isHiddenFooter: false)
             }else{
                 self.RefreshRequest(isLoading: false, isHiddenFooter: true, isLoadError: true)

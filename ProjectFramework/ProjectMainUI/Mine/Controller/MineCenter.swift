@@ -201,13 +201,12 @@ class MineCenter:UIViewController,UITableViewDelegate,UITableViewDataSource
                     
                 }
             }
-          
-          
-            
+           
         }
         if(indexPath.section==1){
             if(indexPath.row==0){
                 print("点击了--联系客服")
+                CommonFunction.CallPhone(self, number: "0632-3333783")
             }
             if(indexPath.row==1){
                 let vc = AboutViewController()
