@@ -39,7 +39,7 @@ class UserCommentCell: UITableViewCell {
         dianzanBtn.frame = CGRect.init(x: CommonFunction.kScreenWidth - 50, y: 10, width: 40, height: 20)
         dianzanBtn.titleLabel?.font = UIFont.systemFont(ofSize: 9)
         dianzanBtn.imageEdgeInsets = UIEdgeInsetsMake(0, 20, 0, 0)
-        dianzanBtn.titleEdgeInsets = UIEdgeInsetsMake(3, -20, 0, 0)
+        dianzanBtn.titleEdgeInsets = UIEdgeInsetsMake(2, -20, 0, 0)
         dianzanBtn.setTitleColor(UIColor.gray, for: .normal)
         dianzanBtn.setTitleColor(UIColor.gray, for: .selected)
         dianzanBtn.setImage(UIImage.init(named: "dianzan_normal"), for: .normal)

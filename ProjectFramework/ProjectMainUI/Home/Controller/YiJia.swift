@@ -52,7 +52,7 @@ class YiJia: CustomTemplateViewController {
     }
     //MARK: tableViewDelegate
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return self.viewModel.ListData[indexPath.row].hasVideo == true ? 160*CommonFunction.kScreenWidth/375 : 90
+        return self.viewModel.ListData[indexPath.row].hasVideo == true ? 200*CommonFunction.kScreenWidth/375 : 90
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         

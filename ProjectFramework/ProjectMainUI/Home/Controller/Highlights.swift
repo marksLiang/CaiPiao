@@ -67,6 +67,6 @@ class Highlights: CustomTemplateViewController {
     private func initUI() -> Void{
         self.InitCongif(tableView)
         self.tableView.frame = CGRect.init(x: 0, y: 0, width: CommonFunction.kScreenWidth, height: CommonFunction.kScreenHeight - 64 - 49)
-        self.tableViewheightForRowAt = 200
+        self.tableViewheightForRowAt = 200 * CommonFunction.kScreenWidth / 375
     }
 }

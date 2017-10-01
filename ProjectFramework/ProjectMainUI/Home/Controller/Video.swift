@@ -65,6 +65,6 @@ class Video: CustomTemplateViewController {
         self.tableView.frame = CGRect.init(x: 0, y: 64, width: CommonFunction.kScreenWidth, height: CommonFunction.kScreenHeight - 64 - 49)
         let requesterNib1 = UINib(nibName: "PulickVideoCell", bundle: nil)
         self.tableView.register(requesterNib1, forCellReuseIdentifier: identifier1)
-        self.tableViewheightForRowAt =  160*CommonFunction.kScreenWidth/375
+        self.tableViewheightForRowAt =  200*CommonFunction.kScreenWidth/375
     }
 }
